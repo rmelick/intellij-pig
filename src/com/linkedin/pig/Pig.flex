@@ -65,8 +65,9 @@ ESCAPE_SEQUENCE=\\[^\r\n]
 <YYINITIAL> {EXEC_LITERAL} { return PigTypes.EXEC_LITERAL; }
 <YYINITIAL> {STRING_LITERAL} { return PigTypes.STRING_LITERAL; }
 
-<YYINITIAL> "TRUE" { return PigTypes.TRUE_KEYWORD; }
-<YYINITIAL> "FALSE" { return PigTypes.FALSE_KEYWORD; }
+<YYINITIAL> "TRUE" { return PigTypes.BOOLEAN_TRUE; }
+<YYINITIAL> "FALSE" { return PigTypes.BOOLEAN_FALSE; }
+
 <YYINITIAL> "NULL" { return PigTypes.NULL_KEYWORD; }
 
  /* keywords */
