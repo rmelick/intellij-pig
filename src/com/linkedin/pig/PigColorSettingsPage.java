@@ -18,9 +18,7 @@ import java.util.Map;
 
 public class PigColorSettingsPage implements ColorSettingsPage {
   private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
-    new AttributesDescriptor("Key", PigSyntaxHighlighter.KEY),
-    new AttributesDescriptor("Separator", PigSyntaxHighlighter.SEPARATOR),
-    new AttributesDescriptor("Value", PigSyntaxHighlighter.VALUE),
+    new AttributesDescriptor("Equal", PigSyntaxHighlighter.EQUAL),
   };
 
   @Nullable
