@@ -35,7 +35,7 @@ thing ::= (constant | id | load | other)
 
 constant ::= (number | string | boolean_constant | tuple_constant | bag_constant | map_constant)
 tuple_constant ::= LPARENTH number (COMMA number)* RPARENTH
-bag_constant ::= LBRACE tuple_constant (COMMA tuple_constant)* LBRACE
+bag_constant ::= LBRACE tuple_constant (COMMA tuple_constant)* RBRACE
 map_constant ::= LBRACK map_entry (COMMA map_entry)* RBRACK
 map_entry ::= string POUND constant
 
