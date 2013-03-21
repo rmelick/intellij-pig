@@ -1,0 +1,21 @@
+{
+  parserClass="com.linkedin.pig.parser.PigParser"
+  stubParserClass="com.linkedin.pig.parser.GeneratedParserUtilBase"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Pig"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.linkedin.pig.psi"
+  psiImplPackage="com.linkedin.pig.psi.impl"
+
+  elementTypeHolderClass="com.linkedin.pig.psi.PigTypes"
+  elementTypeClass="com.linkedin.pig.psi.PigElementType"
+  tokenTypeClass="com.linkedin.pig.psi.PigTokenType"
+}
+
+pigFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
