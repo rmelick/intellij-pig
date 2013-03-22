@@ -52,7 +52,7 @@ private op_clause ::= define_clause
 
 define_clause ::= DEFINE_KEYWORD alias func_clause
 
-load_clause ::= LOAD_KEYWORD filename (USING_KEYWORD func_clause)? {pin=1} //as_clause?
+load_clause ::= LOAD_KEYWORD filename (USING_KEYWORD func_clause)? as_clause? {pin=1}
 
 func_clause ::= func_name (LPARENTH func_args? RPARENTH)? {pin=1}
 func_name ::= id (DOT id)*
