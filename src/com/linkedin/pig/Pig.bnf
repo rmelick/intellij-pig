@@ -22,7 +22,7 @@ pigFile ::= statement*
 statement ::= (import_statement | general_statement) //| foreach_statement | split_statement | inline_statement |
 
 
-import_statement ::= IMPORT_KEYWORD string SEMICOLON
+import_statement ::= IMPORT_KEYWORD STRING_LITERAL SEMICOLON
 
 
 general_statement ::= (alias EQUAL)? (op_clause parallel_clause? | LPARENTH op_clause parallel_clause? RPARENTH) SEMICOLON //{recoverUntil="recover_"}
@@ -32,22 +32,29 @@ id ::= IDENTIFIER
 
 parallel_clause ::= PARALLEL_KEYWORD INTEGER_LITERAL
 
-op_clause ::= define_clause
-            | load_clause
-            | group_clause
-            | store_clause
+private op_clause ::= define_clause
+                  | load_clause
+                  | group_clause
+                  | store_clause
+                  | filter_clause
+                  | distinct_clause
+                  | limit_clause
+                  | sample_clause
+                  | order_clause
+                  | cross_clause
+                  | union_clause
             /*
             |
 
 
-            | filter_clause
-            | distinct_clause
-            | limit_clause
-            | sample_clause
-            | order_clause
-            | cross_clause
+
+
+
+
+
+
             | join_clause
-            | union_clause
+
             | stream_clause
             | mr_clause
             */
@@ -61,6 +68,27 @@ func_name ::= id (DOT id)*
 func_args ::= STRING_LITERAL (COMMA STRING_LITERAL)*
 
 store_clause ::= STORE_KEYWORD rel INTO_KEYWORD filename (USING_KEYWORD func_clause)? {pin=1}
+
+filter_clause ::= FILTER_KEYWORD rel BY_KEYWORD cond
+
+distinct_clause ::= DISTINCT_KEYWORD rel partition_clause?
+
+limit_clause ::= LIMIT_KEYWORD rel (INTEGER_LITERAL | LONG_LITERAL)
+
+sample_clause ::= SAMPLE_KEYWORD rel DOUBLE_LITERAL
+
+order_clause ::= ORDER_KEYWORD rel BY_KEYWORD order_by_clause (USING_KEYWORD func_clause)? {pin=1}
+order_by_clause ::= STAR (ASC_KEYWORD | DESC_KEYWORD)? | order_col_list
+private order_col_list ::= order_col (COMMA order_col)*
+order_col ::= col_range (ASC_KEYWORD | DESC_KEYWORD)?
+            | col_ref (ASC_KEYWORD | DESC_KEYWORD)?
+            | LPARENTH col_ref (ASC_KEYWORD | DESC_KEYWORD)? RPARENTH
+
+
+cross_clause ::= CROSS_KEYWORD rel_list partition_clause?
+rel_list ::= rel (COMMA rel)*
+
+union_clause ::= UNION_KEYWORD ONSCHEMA_KEYWORD? rel_list
 
 group_clause ::= (GROUP_KEYWORD | COGROUP_KEYWORD) group_item_list (USING_KEYWORD group_type)? partition_clause? {pin=1}
 
@@ -89,8 +117,35 @@ unary_expr ::= expr_eval
              | LPARENTH expr RPARENTH
              | neg_expr
 
-expr_eval ::= const_expr | alias // TODO remove alias, ADD var_expr | var_expr
+expr_eval ::= const_expr | var_expr
 const_expr ::= literal
+var_expr ::= projectable_expr (dot_proj | pound_proj)*
+
+projectable_expr ::= func_eval | col_ref | bin_expr
+dot_proj ::= DOT (col_alias_or_index | (LPARENTH col_alias_or_index (COMMA col_alias_or_index)* RPARENTH))
+pound_proj ::= POUND (STRING_LITERAL | NULL_KEYWORD)
+
+private col_alias_or_index ::= col_alias | col_index
+col_alias ::= GROUP_KEYWORD | id
+col_index ::= DOLLARVAR
+
+func_eval ::= func_name LPARENTH real_arg_list? RPARENTH
+real_arg_list ::= real_arg (COMMA real_arg)*
+real_arg ::= expr | STAR | col_range
+
+bin_expr ::= LPARENTH cond QMARK expr COLON expr RPARENTH
+
+cond ::= or_cond
+or_cond ::= and_cond (OR_KEYWORD and_cond)*
+and_cond ::= unary_cond (AND_KEYWORD unary_cond)*
+unary_cond ::= LPARENTH cond RPARENTH
+             | expr rel_op expr
+             | func_eval
+             | null_check_cond
+             | not_cond
+
+not_cond ::= NOT_KEYWORD unary_cond
+null_check_cond ::= expr IS_KEYWORD NOT_KEYWORD? NULL_KEYWORD
 
 neg_expr ::= MINUS unary_expr// TODO switch to cast expression
 
@@ -105,9 +160,25 @@ bag ::= (LBRACE tuple (COMMA tuple)* RBRACE) | LBRACE RBRACE
 
 tuple ::= (LPARENTH literal (COMMA literal)* RPARENTH) | LPARENTH RPARENTH
 
-rel ::= alias //needs further expansion  | LPARENTH
+rel ::= alias // TODO needs further expansion  | LPARENTH
 
 filename ::= STRING_LITERAL
+
+//relational operators
+rel_op ::= rel_op_eq
+         | rel_op_ne
+         | rel_op_gt
+         | rel_op_gte
+         | rel_op_lt
+         | rel_op_lte
+         | STR_OP_MATCHES
+
+rel_op_eq ::= STR_OP_EQ | EQEQ
+rel_op_ne ::= STR_OP_NE | NOTEQ
+rel_op_gt ::= STR_OP_GT | GT
+rel_op_gte ::= STR_OP_GTE | GTEQ
+rel_op_lt ::= STR_OP_LT | LT
+rel_op_lte ::= STR_OP_LTE | LTEQ
 
 //statement ::= (assignment_statement | comment | import_statement)
 
@@ -121,17 +192,5 @@ comment ::= (C_STYLE_COMMENT |
 
 //assignment_statement ::= id EQUAL thing SEMICOLON {pin=2 recoverUntil="recover_"}
 
-thing ::= (constant | id | load | other)
 
-
-
-constant ::= (number | string | boolean_constant | tuple_constant | bag_constant | map_constant)
-
-
-number ::= (INTEGER_LITERAL | LONG_LITERAL | FLOAT_LITERAL | DOUBLE_LITERAL)
-string ::= STRING_LITERAL
-boolean_constant ::= (BOOLEAN_TRUE | BOOLEAN_FALSE)
-
-storeFunc ::= IDENTIFIER LPARENTH RPARENTH
-
-other ::= ( EXEC_LITERAL | NULL_KEYWORD | AS_KEYWORD | ASC_KEYWORD | BAG_KEYWORD | BY_KEYWORD | CACHE_KEYWORD | CHARARRAY_KEYWORD | COGROUP_KEYWORD | CROSS_KEYWORD | DEFINE_KEYWORD | DESC_KEYWORD | DISTINCT_KEYWORD | DOUBLE_KEYWORD | FILTER_KEYWORD | FLATTEN_KEYWORD | FLOAT_KEYWORD | FOREACH_KEYWORD | FULL_KEYWORD | GENERATE_KEYWORD | GROUP_KEYWORD | IF_KEYWORD | IN_KEYWORD | INNER_KEYWORD | INPUT_KEYWORD | INT_KEYWORD | INTO_KEYWORD | IS_KEYWORD | JOIN_KEYWORD | LEFT_KEYWORD | LIMIT_KEYWORD | LONG_KEYWORD | MAP_KEYWORD | MAPREDUCE_KEYWORD | ONSCHEMA_KEYWORD | ORDER_KEYWORD | OUTER_KEYWORD | OUTPUT_KEYWORD | PARALLEL_KEYWORD | PARTITION_KEYWORD | RETURNS_KEYWORD | RIGHT_KEYWORD | SAMPLE_KEYWORD | SET_KEYWORD | SHIP_KEYWORD | SPLIT_KEYWORD | STDERROR_KEYWORD | STDIN_KEYWORD | STDOUT_KEYWORD | STORE_KEYWORD | STREAM_KEYWORD | THROUGH_KEYWORD | TUPLE_KEYWORD | UNION_KEYWORD | VOID_KEYWORD | AND_KEYWORD | NOT_KEYWORD | OR_KEYWORD | STR_OP_EQ | STR_OP_GT | STR_OP_LT | STR_OP_GTE | STR_OP_LTE | STR_OP_NE | STR_OP_MATCHES | LPARENTH | RPARENTH | LBRACE | RBRACE | LBRACK | RBRACK | COMMA | DOT | EQUAL | GT | LT | QMARK | COLON | EQEQ | LTEQ | GTEQ | NOTEQ | PLUS | MINUS | STAR | DIV | POUND | PERCENT | DOUBLE_PERIOD | DOLLAR | DCOLON )*
+other ::= ( EXEC_LITERAL | NULL_KEYWORD | AS_KEYWORD | ASC_KEYWORD | BAG_KEYWORD | BY_KEYWORD | CACHE_KEYWORD | CHARARRAY_KEYWORD | COGROUP_KEYWORD | CROSS_KEYWORD | DEFINE_KEYWORD | DESC_KEYWORD | DISTINCT_KEYWORD | DOUBLE_KEYWORD | FILTER_KEYWORD | FLATTEN_KEYWORD | FLOAT_KEYWORD | FOREACH_KEYWORD | FULL_KEYWORD | GENERATE_KEYWORD | GROUP_KEYWORD | IF_KEYWORD | IN_KEYWORD | INNER_KEYWORD | INPUT_KEYWORD | INT_KEYWORD | INTO_KEYWORD | IS_KEYWORD | JOIN_KEYWORD | LEFT_KEYWORD | LIMIT_KEYWORD | LONG_KEYWORD | MAP_KEYWORD | MAPREDUCE_KEYWORD | ONSCHEMA_KEYWORD | ORDER_KEYWORD | OUTER_KEYWORD | OUTPUT_KEYWORD | PARALLEL_KEYWORD | PARTITION_KEYWORD | RETURNS_KEYWORD | RIGHT_KEYWORD | SAMPLE_KEYWORD | SET_KEYWORD | SHIP_KEYWORD | SPLIT_KEYWORD | STDERROR_KEYWORD | STDIN_KEYWORD | STDOUT_KEYWORD | STORE_KEYWORD | STREAM_KEYWORD | THROUGH_KEYWORD | TUPLE_KEYWORD | UNION_KEYWORD | VOID_KEYWORD | AND_KEYWORD | NOT_KEYWORD | OR_KEYWORD | STR_OP_EQ | STR_OP_GT | STR_OP_LT | STR_OP_GTE | STR_OP_LTE | STR_OP_NE | STR_OP_MATCHES | LPARENTH | RPARENTH | LBRACE | RBRACE | LBRACK | RBRACK | COMMA | DOT | EQUAL | GT | LT | QMARK | COLON | EQEQ | LTEQ | GTEQ | NOTEQ | PLUS | MINUS | STAR | DIV | POUND | PERCENT | DOUBLE_PERIOD | DOLLAR | DCOLON | DOC_COMMENT | BOOLEAN_TRUE | END_OF_LINE_COMMENT | BOOLEAN_FALSE | C_STYLE_COMMENT)*
