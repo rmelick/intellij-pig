@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f314edf8-7661-427a-9ff7-d063282f88dd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PigPlugin.iws" afterPath="$PROJECT_DIR$/PigPlugin.iws" />
     </list>
     <ignored path="PigPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +14,7 @@
     <file path="/Dummy.txt" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363843830366" ignored="false" />
     <file path="/PigTokenType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753727864" ignored="false" />
     <file path="/PigElementType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753788982" ignored="false" />
-    <file path="/Pig.bnf" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363983145179" ignored="false" />
+    <file path="/Pig.bnf" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363984531470" ignored="false" />
     <file path="/Pig.flex" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363936244673" ignored="false" />
     <file path="/PigFile.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363803830967" ignored="false" />
     <file path="/PigParserDefinition.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363848947465" ignored="false" />
@@ -139,7 +138,7 @@
       <file leaf-file-name="Pig.bnf" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="32" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.41666666">
+            <state line="55" column="58" selection-start="1632" selection-end="1632" vertical-scroll-proportion="1.6666666">
               <folding />
             </state>
           </provider>
@@ -178,7 +177,7 @@
       <file leaf-file-name="Pig.flex" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="15" selection-start="2724" selection-end="2726" vertical-scroll-proportion="-4.6153846">
+            <state line="147" column="15" selection-start="6345" selection-end="6347" vertical-scroll-proportion="-4.769231">
               <folding />
             </state>
           </provider>
@@ -222,7 +221,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="183" />
+    <option name="x" value="112" />
     <option name="y" value="22" />
     <option name="width" value="1420" />
     <option name="height" value="790" />
@@ -785,7 +784,7 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="ToolWindowManager">
-    <frame x="183" y="22" width="1420" height="790" extended-state="0" />
+    <frame x="112" y="22" width="1420" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -980,14 +979,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="15" selection-start="2724" selection-end="2726" vertical-scroll-proportion="-4.6153846">
+        <state line="147" column="15" selection-start="6345" selection-end="6347" vertical-scroll-proportion="-4.769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="32" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.41666666">
+        <state line="55" column="58" selection-start="1632" selection-end="1632" vertical-scroll-proportion="1.6666666">
           <folding />
         </state>
       </provider>

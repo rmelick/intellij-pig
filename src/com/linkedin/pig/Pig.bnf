@@ -43,21 +43,13 @@ private op_clause ::= define_clause
                   | order_clause
                   | cross_clause
                   | union_clause
+                  | stream_clause
             /*
-            |
-
-
-
-
-
-
-
-
             | join_clause
-
             | stream_clause
             | mr_clause
             */
+
 
 define_clause ::= DEFINE_KEYWORD alias func_clause
 
@@ -89,6 +81,18 @@ cross_clause ::= CROSS_KEYWORD rel_list partition_clause?
 rel_list ::= rel (COMMA rel)*
 
 union_clause ::= UNION_KEYWORD ONSCHEMA_KEYWORD? rel_list
+
+stream_clause ::= STREAM_KEYWORD rel THROUGH_KEYWORD (EXEC_LITERAL | alias) as_clause?
+as_clause ::= AS_KEYWORD (field_def | LPARENTH field_def RPARENTH)
+
+field_def ::= id (COLON type)?
+field_def_list ::= field_def (COMMA field_def)*
+
+type ::= simple_type | tuple_type | bag_type | map_type
+simple_type ::= INT_KEYWORD | LONG_KEYWORD | FLOAT_KEYWORD | DOUBLE_KEYWORD | CHARARRAY_KEYWORD
+tuple_type ::= TUPLE_KEYWORD? LPARENTH field_def_list? RPARENTH
+bag_type ::= BAG_KEYWORD? LBRACE ((id COLON)? tuple_type)? RBRACE
+map_type ::= MAP_KEYWORD? LBRACK type? RBRACK
 
 group_clause ::= (GROUP_KEYWORD | COGROUP_KEYWORD) group_item_list (USING_KEYWORD group_type)? partition_clause? {pin=1}
 
