@@ -30,11 +30,16 @@ general_statement ::= (alias EQUAL)? (op_clause parallel_clause? | LPARENTH op_c
 alias ::= id
 id ::= IDENTIFIER
 
-op_clause ::= load_clause
-            /*
-            | define_clause
+parallel_clause ::= PARALLEL_KEYWORD INTEGER_LITERAL
+
+op_clause ::= define_clause
+            | load_clause
             | group_clause
             | store_clause
+            /*
+            |
+
+
             | filter_clause
             | distinct_clause
             | limit_clause
@@ -47,13 +52,62 @@ op_clause ::= load_clause
             | mr_clause
             */
 
-parallel_clause ::= PARALLEL_KEYWORD INTEGER_LITERAL
+define_clause ::= DEFINE_KEYWORD alias func_clause
 
-load_clause ::= LOAD_KEYWORD STRING_LITERAL (USING_KEYWORD func_clause)? {pin=1} //as_clause?
+load_clause ::= LOAD_KEYWORD filename (USING_KEYWORD func_clause)? {pin=1} //as_clause?
 
 func_clause ::= func_name (LPARENTH func_args? RPARENTH)? {pin=1}
 func_name ::= id (DOT id)*
 func_args ::= STRING_LITERAL (COMMA STRING_LITERAL)*
+
+store_clause ::= STORE_KEYWORD rel INTO_KEYWORD filename (USING_KEYWORD func_clause)? {pin=1}
+
+group_clause ::= (GROUP_KEYWORD | COGROUP_KEYWORD) group_item_list (USING_KEYWORD group_type)? partition_clause? {pin=1}
+
+group_item_list ::= group_item (COMMA group_item)*
+group_item ::= rel (BY_KEYWORD join_group_by_expr_list | ALL_KEYWORD | ANY_KEYWORD ) (INNER_KEYWORD | OUTER_KEYWORD)?
+
+join_group_by_expr_list ::= (LPARENTH join_group_by_expr (COMMA join_group_by_expr)* RPARENTH) | join_group_by_expr
+private join_group_by_expr ::= col_range | expr | STAR
+
+group_type ::= STRING_LITERAL
+
+partition_clause ::= PARTITION_KEYWORD BY_KEYWORD func_name
+
+col_range ::= (col_ref DOUBLE_PERIOD col_ref?) | (DOUBLE_PERIOD col_ref)
+
+col_ref ::= alias_col_ref | dollar_col_ref
+alias_col_ref ::= GROUP_KEYWORD | id
+dollar_col_ref ::= DOLLARVAR
+DOLLARVAR ::= DOLLAR id
+
+
+expr ::= add_expr
+add_expr ::= multi_expr ((PLUS | MINUS) multi_expr)*
+multi_expr ::= unary_expr ((STAR | DIV | PERCENT) unary_expr)* // TODO ADD CASTING EXPRESSIONS
+unary_expr ::= expr_eval
+             | LPARENTH expr RPARENTH
+             | neg_expr
+
+expr_eval ::= const_expr | alias // TODO remove alias, ADD var_expr | var_expr
+const_expr ::= literal
+
+neg_expr ::= MINUS unary_expr// TODO switch to cast expression
+
+literal ::= scalar | map | bag | tuple
+scalar ::= num_scalar | STRING_LITERAL | NULL_KEYWORD
+num_scalar ::= MINUS? (INTEGER_LITERAL | LONG_LITERAL | FLOAT_LITERAL | DOUBLE_LITERAL)
+
+map ::= (LBRACK map_entry (COMMA map_entry)* RBRACK) | LBRACK RBRACK
+map_entry ::= STRING_LITERAL POUND const_expr
+
+bag ::= (LBRACE tuple (COMMA tuple)* RBRACE) | LBRACE RBRACE
+
+tuple ::= (LPARENTH literal (COMMA literal)* RPARENTH) | LPARENTH RPARENTH
+
+rel ::= alias //needs further expansion  | LPARENTH
+
+filename ::= STRING_LITERAL
 
 //statement ::= (assignment_statement | comment | import_statement)
 
@@ -72,10 +126,7 @@ thing ::= (constant | id | load | other)
 
 
 constant ::= (number | string | boolean_constant | tuple_constant | bag_constant | map_constant)
-tuple_constant ::= LPARENTH number (COMMA number)* RPARENTH
-bag_constant ::= LBRACE tuple_constant (COMMA tuple_constant)* RBRACE
-map_constant ::= LBRACK map_entry (COMMA map_entry)* RBRACK
-map_entry ::= string POUND constant
+
 
 number ::= (INTEGER_LITERAL | LONG_LITERAL | FLOAT_LITERAL | DOUBLE_LITERAL)
 string ::= STRING_LITERAL

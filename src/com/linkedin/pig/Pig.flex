@@ -71,6 +71,8 @@ ESCAPE_SEQUENCE=\\[^\r\n]
 <YYINITIAL> "NULL" { return PigTypes.NULL_KEYWORD; }
 
  /* keywords */
+<YYINITIAL> "ALL" { return PigTypes.ALL_KEYWORD; }
+<YYINITIAL> "ANY" { return PigTypes.ANY_KEYWORD; }
 <YYINITIAL> "AS" { return PigTypes.AS_KEYWORD; }
 <YYINITIAL> "ASC" { return PigTypes.ASC_KEYWORD; }
 <YYINITIAL> "BAG" { return PigTypes.BAG_KEYWORD; }
