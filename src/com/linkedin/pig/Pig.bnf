@@ -44,10 +44,9 @@ private op_clause ::= define_clause
                   | cross_clause
                   | union_clause
                   | stream_clause
+                  | mr_clause
             /*
             | join_clause
-            | stream_clause
-            | mr_clause
             */
 
 
@@ -93,6 +92,9 @@ simple_type ::= INT_KEYWORD | LONG_KEYWORD | FLOAT_KEYWORD | DOUBLE_KEYWORD | CH
 tuple_type ::= TUPLE_KEYWORD? LPARENTH field_def_list? RPARENTH
 bag_type ::= BAG_KEYWORD? LBRACE ((id COLON)? tuple_type)? RBRACE
 map_type ::= MAP_KEYWORD? LBRACK type? RBRACK
+
+mr_clause ::= MAPREDUCE_KEYWORD STRING_LITERAL (LPARENTH path_list RPARENTH)? store_clause load_clause EXEC_LITERAL?
+path_list ::= STRING_LITERAL (COMMA STRING_LITERAL)*
 
 group_clause ::= (GROUP_KEYWORD | COGROUP_KEYWORD) group_item_list (USING_KEYWORD group_type)? partition_clause? {pin=1}
 
