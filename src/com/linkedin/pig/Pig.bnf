@@ -22,11 +22,63 @@ pigFile ::= statement*
 statement ::= SEMICOLON
             | general_statement
             | import_statement
-            //| foreach_statement | split_statement | inline_statement |
+            | foreach_statement //| split_statement | inline_statement |
 
+// nested foreach
+foreach_statement ::= foreach_complex_statement
+                    | foreach_simple_statement
+
+foreach_complex_statement ::= (alias EQUAL)? foreach_clause_complex SEMICOLON?
+foreach_simple_statement ::= (alias EQUAL)? (foreach_clause_simple parallel_clause?
+                                              | LPARENTH foreach_clause_simple parallel_clause? RPARENTH) SEMICOLON
+
+foreach_clause_simple ::= FOREACH_KEYWORD rel foreach_plan_simple
+foreach_plan_simple ::= generate_clause
+generate_clause ::= GENERATE_KEYWORD flatten_generated_item (COMMA flatten_generated_item)*
+
+flatten_generated_item ::= flatten_clause (AS_KEYWORD ((LPARENTH field_def_list RPARENTH) | field_def))?
+                         | col_range (AS_KEYWORD ((LPARENTH field_def_list RPARENTH) | field_def))?
+                         | expr (AS_KEYWORD field_def)?
+                         | STAR (AS_KEYWORD ((LPARENTH field_def_list RPARENTH) | field_def))?
+
+flatten_clause ::= FLATTEN_KEYWORD LPARENTH expr RPARENTH
+
+foreach_clause_complex ::= FOREACH_KEYWORD rel foreach_plan_complex
+
+foreach_plan_complex ::= nested_blk
+
+nested_blk ::= LBRACE nested_command_list (generate_clause SEMICOLON) RBRACE
+nested_command_list ::= (nested_command SEMICOLON)*
+nested_command ::= id EQUAL col_ref DOT col_ref_list
+                 | id EQUAL expr
+                 | id EQUAL nested_op
+
+nested_op ::= nested_filter
+            | nested_sort
+            | nested_distinct
+            | nested_limit
+            | nested_cross
+            | nested_foreach
+
+nested_filter ::= FILTER_KEYWORD nested_op_input BY_KEYWORD cond
+nested_op_input ::= col_ref | nested_proj
+nested_proj ::= col_ref DOT col_ref_list
+
+nested_sort ::= ORDER_KEYWORD nested_op_input BY_KEYWORD order_by_clause (USING_KEYWORD func_clause)?
+
+nested_distinct ::= DISTINCT_KEYWORD nested_op_input
+
+nested_limit ::= LIMIT_KEYWORD nested_op_input ((INTEGER_LITERAL SEMICOLON) | expr)
+
+nested_cross ::= CROSS_KEYWORD nested_op_input_list
+
+nested_foreach ::= FOREACH_KEYWORD nested_op_input generate_clause
+
+nested_op_input_list ::= nested_op_input (COMMA nested_op_input)*
+
+col_ref_list ::= (col_ref | (LPARENTH col_ref (COMMA col_ref)* RPARENTH))
 
 import_statement ::= IMPORT_KEYWORD STRING_LITERAL SEMICOLON
-
 
 general_statement ::= (alias EQUAL)? (op_clause parallel_clause? | LPARENTH op_clause parallel_clause? RPARENTH) SEMICOLON //{recoverUntil="recover_"}
 
@@ -130,7 +182,14 @@ private join_group_by_expr ::= col_range | expr | STAR
 
 expr ::= add_expr
 add_expr ::= multi_expr ((PLUS | MINUS) multi_expr)*
-multi_expr ::= unary_expr ((STAR | DIV | PERCENT) unary_expr)* // TODO ADD CASTING EXPRESSIONS
+multi_expr ::= cast_expr ((STAR | DIV | PERCENT) cast_expr)*
+
+cast_expr ::= LPARENTH type_cast RPARENTH unary_expr
+            | unary_expr
+type_cast ::= simple_type | map_type | tuple_type_cast | bag_type_cast
+tuple_type_cast ::= TUPLE_KEYWORD LPARENTH (type_cast (COMMA type_cast)* )? RPARENTH
+bag_type_cast ::= BAG_KEYWORD LBRACE tuple_type_cast? RBRACE
+
 unary_expr ::= expr_eval
              | LPARENTH expr RPARENTH
              | neg_expr
@@ -165,7 +224,7 @@ unary_cond ::= LPARENTH cond RPARENTH
 not_cond ::= NOT_KEYWORD unary_cond
 null_check_cond ::= expr IS_KEYWORD NOT_KEYWORD? NULL_KEYWORD
 
-neg_expr ::= MINUS unary_expr// TODO switch to cast expression
+neg_expr ::= MINUS cast_expr
 
 literal ::= scalar | map | bag | tuple
 scalar ::= num_scalar | STRING_LITERAL | NULL_KEYWORD
@@ -178,7 +237,8 @@ bag ::= (LBRACE tuple (COMMA tuple)* RBRACE) | LBRACE RBRACE
 
 tuple ::= (LPARENTH literal (COMMA literal)* RPARENTH) | LPARENTH RPARENTH
 
-rel ::= alias // TODO needs further expansion  | LPARENTH
+rel ::= alias
+      | LPARENTH (foreach_clause_complex | ((op_clause | foreach_clause_simple) parallel_clause?)) RPARENTH
 
 filename ::= STRING_LITERAL
 
