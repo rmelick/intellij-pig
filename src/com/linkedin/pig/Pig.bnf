@@ -19,7 +19,10 @@
 pigFile ::= statement*
 //private recover_ ::= !(WHITE_SPACE)
 
-statement ::= (import_statement | general_statement) //| foreach_statement | split_statement | inline_statement |
+statement ::= SEMICOLON
+            | general_statement
+            | import_statement
+            //| foreach_statement | split_statement | inline_statement |
 
 
 import_statement ::= IMPORT_KEYWORD STRING_LITERAL SEMICOLON
@@ -33,21 +36,19 @@ id ::= IDENTIFIER
 parallel_clause ::= PARALLEL_KEYWORD INTEGER_LITERAL
 
 private op_clause ::= define_clause
-                  | load_clause
-                  | group_clause
-                  | store_clause
-                  | filter_clause
-                  | distinct_clause
-                  | limit_clause
-                  | sample_clause
-                  | order_clause
-                  | cross_clause
-                  | union_clause
-                  | stream_clause
-                  | mr_clause
-            /*
-            | join_clause
-            */
+                    | load_clause
+                    | group_clause
+                    | store_clause
+                    | filter_clause
+                    | distinct_clause
+                    | limit_clause
+                    | sample_clause
+                    | order_clause
+                    | cross_clause
+                    | join_clause
+                    | union_clause
+                    | stream_clause
+                    | mr_clause
 
 
 define_clause ::= DEFINE_KEYWORD alias func_clause
@@ -101,9 +102,6 @@ group_clause ::= (GROUP_KEYWORD | COGROUP_KEYWORD) group_item_list (USING_KEYWOR
 group_item_list ::= group_item (COMMA group_item)*
 group_item ::= rel (BY_KEYWORD join_group_by_expr_list | ALL_KEYWORD | ANY_KEYWORD ) (INNER_KEYWORD | OUTER_KEYWORD)?
 
-join_group_by_expr_list ::= (LPARENTH join_group_by_expr (COMMA join_group_by_expr)* RPARENTH) | join_group_by_expr
-private join_group_by_expr ::= col_range | expr | STAR
-
 group_type ::= STRING_LITERAL
 
 partition_clause ::= PARTITION_KEYWORD BY_KEYWORD func_name
@@ -114,6 +112,20 @@ col_ref ::= alias_col_ref | dollar_col_ref
 alias_col_ref ::= GROUP_KEYWORD | id
 dollar_col_ref ::= DOLLARVAR
 DOLLARVAR ::= DOLLAR id
+
+
+join_clause ::= JOIN_KEYWORD join_sub_clause (USING_KEYWORD join_type)? partition_clause?
+join_type ::= STRING_LITERAL
+join_sub_clause ::= join_item (LEFT_KEYWORD | RIGHT_KEYWORD | FULL_KEYWORD) OUTER_KEYWORD? COMMA join_item
+                  | join_items_list
+
+join_item ::= rel join_group_by_clause
+// we cannot name this join_item_list because Grammar-kit will generate duplicate method names for joinSubClause
+join_items_list ::= join_item (COMMA join_item)+
+
+join_group_by_clause ::= BY_KEYWORD join_group_by_expr_list
+join_group_by_expr_list ::= (LPARENTH join_group_by_expr (COMMA join_group_by_expr)* RPARENTH) | join_group_by_expr
+private join_group_by_expr ::= col_range | expr | STAR
 
 
 expr ::= add_expr

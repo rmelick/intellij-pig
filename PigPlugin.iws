@@ -14,7 +14,7 @@
     <file path="/Dummy.txt" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363843830366" ignored="false" />
     <file path="/PigTokenType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753727864" ignored="false" />
     <file path="/PigElementType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753788982" ignored="false" />
-    <file path="/Pig.bnf" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363985872738" ignored="false" />
+    <file path="/Pig.bnf" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363997121143" ignored="false" />
     <file path="/Pig.flex" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363936244673" ignored="false" />
     <file path="/PigFile.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363803830967" ignored="false" />
     <file path="/PigParserDefinition.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363848947465" ignored="false" />
@@ -23,6 +23,7 @@
     <file path="/PigColorSettingsPage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363806186924" ignored="false" />
     <file path="/test.bnf.preview" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363841821785" ignored="false" />
     <file path="/Pig.bnf.preview" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363845239309" ignored="false" />
+    <file path="/PigJoinTypeImpl.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363996912147" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,15 +96,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttributesDescriptor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/options/colors/AttributesDescriptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="9" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PigSyntaxHighlighter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,16 +130,16 @@
       <file leaf-file-name="Pig.bnf" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="85" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.125">
+            <state line="122" column="112" selection-start="4460" selection-end="4460" vertical-scroll-proportion="0.5277778">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PigLanguage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigLanguage.java">
+      <file leaf-file-name="PigJoinSubClauseImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/impl/PigJoinSubClauseImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+            <state line="13" column="13" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,7 +169,7 @@
       <file leaf-file-name="Pig.flex" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="15" selection-start="6345" selection-end="6347" vertical-scroll-proportion="-4.769231">
+            <state line="149" column="43" selection-start="6463" selection-end="6463" vertical-scroll-proportion="-5.923077">
               <folding />
             </state>
           </provider>
@@ -201,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/linkedin/pig/psi/PigElementType.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/psi/PigFile.java" />
         <option value="$PROJECT_DIR$/src/PigSyntaxHighlighter.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighterFactory.java" />
@@ -216,13 +207,14 @@
         <option value="$PROJECT_DIR$/gen/com/linkedin/pig/parser/PigParser.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigParserDefinition.java" />
+        <option value="$PROJECT_DIR$/gen/com/linkedin/pig/psi/impl/PigJoinTypeImpl.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="381" />
-    <option name="y" value="34" />
+    <option name="x" value="93" />
+    <option name="y" value="22" />
     <option name="width" value="1420" />
     <option name="height" value="790" />
   </component>
@@ -615,6 +607,58 @@
               <option name="myItemId" value="gen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -784,7 +828,7 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="ToolWindowManager">
-    <frame x="381" y="34" width="1420" height="790" extended-state="0" />
+    <frame x="93" y="22" width="1420" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -793,14 +837,14 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38955224" sideWeight="0.49417758" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.77874815" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5385735" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5414847" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4477612" sideWeight="0.3944687" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4477612" sideWeight="0.37918487" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.21791045" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.45633188" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.45342067" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -869,15 +913,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigFileType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
@@ -979,14 +1014,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="15" selection-start="6345" selection-end="6347" vertical-scroll-proportion="-4.769231">
+        <state line="149" column="43" selection-start="6463" selection-end="6463" vertical-scroll-proportion="-5.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/impl/PigJoinSubClauseImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="85" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.125">
+        <state line="122" column="112" selection-start="4460" selection-end="4460" vertical-scroll-proportion="0.5277778">
           <folding />
         </state>
       </provider>
