@@ -18,7 +18,9 @@ import java.util.Map;
 
 public class PigColorSettingsPage implements ColorSettingsPage {
   private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
-    new AttributesDescriptor("Equal", PigSyntaxHighlighter.EQUAL),
+    new AttributesDescriptor("Keywords", PigSyntaxHighlighter.KEYWORD),
+    new AttributesDescriptor("Operators", PigSyntaxHighlighter.OPERATOR),
+    new AttributesDescriptor("Comments", PigSyntaxHighlighter.COMMENT),
   };
 
   @Nullable
@@ -36,18 +38,42 @@ public class PigColorSettingsPage implements ColorSettingsPage {
   @NotNull
   @Override
   public String getDemoText() {
-    return "# You are reading the \".properties\" entry.\n" +
-      "! The exclamation mark can also mark text as comments.\n" +
-      "website = http://en.wikipedia.org/\n" +
-      "language = English\n" +
-      "# The backslash below tells the application to continue reading\n" +
-      "# the value onto the next line.\n" +
-      "message = Welcome to \\\n" +
-      "          Wikipedia!\n" +
-      "# Add spaces to the key\n" +
-      "key\\ with\\ spaces = This is the value that could be looked up with the key \"key with spaces\".\n" +
-      "# Unicode\n" +
-      "tab : \\u0009";
+    return "IMPORT 'myjar.jar';\n" +
+      "\n" +
+      "x = LOAD '/data/derived/blah#LATEST';\n" +
+      "x = LOAD '/data/derived/blah#LATEST' USING com.linkedin.LiAvroStorage('date.range', 'num.days=40');\n" +
+      "\n" +
+      "STORE x INTO '/mydata/' USING PigStorage();\n" +
+      "\n" +
+      "DEFINE GetTreatment com.linkedin.GetTreatment('stuff');\n" +
+      "\n" +
+      "z = GROUP a BY (first);\n" +
+      "\n" +
+      "x = FILTER y BY (col1 == 'abc');\n" +
+      "\n" +
+      "z = DISTINCT a PARALLEL 1;\n" +
+      "\n" +
+      "Z = LIMIT a 10;\n" +
+      "\n" +
+      "Z = SAMPLE a 10.0;\n" +
+      "\n" +
+      "ORDER a BY col1 ASC;\n" +
+      "\n" +
+      "X = CROSS A, B;\n" +
+      "\n" +
+      "a = UNION a, b;\n" +
+      "\n" +
+      "B = STREAM A THROUGH `stream.pl -n 5`;\n" +
+      "\n" +
+      "B = MAPREDUCE 'wordcount.jar' STORE A INTO 'inputDir' LOAD 'outputDir' `org.myorg.WordCount inputDir outputDir`;\n" +
+      "\n" +
+      "A = JOIN x BY col1, y BY col2 USING 'replicated';\n" +
+      "\n" +
+      "A = FILTER a BY (col1 + (INT) col2) == 2;\n" +
+      "\n" +
+      "/*\n" +
+      "Things\n" +
+      "*/";
   }
 
   @Nullable
