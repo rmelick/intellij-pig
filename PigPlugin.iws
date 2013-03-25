@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f314edf8-7661-427a-9ff7-d063282f88dd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PigPlugin.iws" afterPath="$PROJECT_DIR$/PigPlugin.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/scratch.txt" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/scratch.txt" />
     </list>
     <ignored path="PigPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,9 +20,9 @@
     <file path="/Pig.flex" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364024769341" ignored="false" />
     <file path="/PigFile.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363803830967" ignored="false" />
     <file path="/PigParserDefinition.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363848947465" ignored="false" />
-    <file path="/PigSyntaxHighlighter.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364185435965" ignored="false" />
+    <file path="/PigSyntaxHighlighter.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364196854594" ignored="false" />
     <file path="/PigSyntaxHighlighterFactory.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363805855843" ignored="false" />
-    <file path="/PigColorSettingsPage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364182860629" ignored="false" />
+    <file path="/PigColorSettingsPage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364196123387" ignored="false" />
     <file path="/test.bnf.preview" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363841821785" ignored="false" />
     <file path="/Pig.bnf.preview" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363845239309" ignored="false" />
     <file path="/PigJoinTypeImpl.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363996912147" ignored="false" />
@@ -90,7 +90,7 @@
       <file leaf-file-name="Pig.bnf" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="33" selection-start="5497" selection-end="5501" vertical-scroll-proportion="-4.6153846">
+            <state line="268" column="86" selection-start="10305" selection-end="10368" vertical-scroll-proportion="-4.6153846">
               <folding />
             </state>
           </provider>
@@ -99,10 +99,19 @@
       <file leaf-file-name="PigFilename.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/PigFilename.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="226" selection-end="236" vertical-scroll-proportion="0.0">
+            <state line="7" column="41" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PsiElement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../intellij-community/platform/core-api/src/com/intellij/psi/PsiElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="17" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -229,30 +238,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PigParserDefinition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigParserDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="13" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PigSyntaxHighlighter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="5" selection-start="2411" selection-end="2411" vertical-scroll-proportion="1.4423592">
+            <state line="82" column="5" selection-start="3117" selection-end="3117" vertical-scroll-proportion="2.5737267">
               <folding>
-                <element signature="e#2066#2085#0" expanded="true" />
+                <element signature="e#2130#2144#0" expanded="true" />
+                <element signature="e#2684#2703#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IElementType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../intellij-community/platform/core-api/src/com/intellij/psi/tree/IElementType.java">
+      <file leaf-file-name="SyntaxHighlighterColors.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/editor/SyntaxHighlighterColors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="16" selection-start="3380" selection-end="3380" vertical-scroll-proportion="0.0">
+            <state line="26" column="99" selection-start="970" selection-end="1002" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextAttributesKey.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../intellij-community/platform/core-api/src/com/intellij/openapi/editor/colors/TextAttributesKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="160" column="34" selection-start="6222" selection-end="6222" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -261,16 +271,7 @@
       <file leaf-file-name="PigTypes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/PigTypes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="19" selection-start="2215" selection-end="2219" vertical-scroll-proportion="-10.538462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SyntaxHighlighter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../intellij-community/platform/platform-api/src/com/intellij/openapi/fileTypes/SyntaxHighlighter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="22" selection-start="2612" selection-end="2612" vertical-scroll-proportion="0.0">
+            <state line="42" column="15" selection-start="2215" selection-end="2215" vertical-scroll-proportion="-20.76923">
               <folding />
             </state>
           </provider>
@@ -279,7 +280,7 @@
       <file leaf-file-name="PigColorSettingsPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="9" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.0">
+            <state line="26" column="46" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -287,10 +288,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scratch.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/scratch.txt">
+      <file leaf-file-name="ColorAndFontDescriptorsProvider.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/options/colors/ColorAndFontDescriptorsProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="1478" selection-end="2180" vertical-scroll-proportion="0.0">
+            <state line="47" column="34" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -529,7 +530,135 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="options" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="options" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fileTypes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="colors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -872,36 +1001,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/options/colors/ColorAndFontDescriptorsProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="25" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/options/colors/AttributesDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="9" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/editor/SyntaxHighlighterColors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1260" column="0" selection-start="44237" selection-end="44237" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../intellij-community/platform/core-api/src/com/intellij/psi/TokenType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
@@ -947,31 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="1478" selection-end="2180" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="9" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="33" selection-start="5497" selection-end="5501" vertical-scroll-proportion="-4.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/PigFilename.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="226" selection-end="236" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,18 +1169,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/options/colors/ColorAndFontDescriptorsProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="34" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="46" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="86" selection-start="10305" selection-end="10368" vertical-scroll-proportion="-4.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/PigTypes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="19" selection-start="2215" selection-end="2219" vertical-scroll-proportion="-10.538462">
+        <state line="42" column="15" selection-start="2215" selection-end="2215" vertical-scroll-proportion="-20.76923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/PigFilename.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="41" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/core-api/src/com/intellij/psi/PsiElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="17" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/core-api/src/com/intellij/openapi/editor/colors/TextAttributesKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="34" selection-start="6222" selection-end="6222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/editor/SyntaxHighlighterColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="99" selection-start="970" selection-end="1002" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="5" selection-start="2411" selection-end="2411" vertical-scroll-proportion="1.4423592">
+        <state line="82" column="5" selection-start="3117" selection-end="3117" vertical-scroll-proportion="2.5737267">
           <folding>
-            <element signature="e#2066#2085#0" expanded="true" />
+            <element signature="e#2130#2144#0" expanded="true" />
+            <element signature="e#2684#2703#0" expanded="true" />
           </folding>
         </state>
       </provider>

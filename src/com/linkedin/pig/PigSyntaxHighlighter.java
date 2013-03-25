@@ -1,4 +1,5 @@
-package com.linkedin.pig; /**
+package com.linkedin.pig;
+/**
  * @author: rmelick <rmelick@linkedin.com>
  * Date: 3/20/13
  */
@@ -17,6 +18,8 @@ import org.jetbrains.annotations.NotNull;
 import java.awt.*;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 import static com.intellij.openapi.editor.colors.TextAttributesKey.createTextAttributesKey;
 
@@ -27,9 +30,24 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
   public static final TextAttributesKey STRING = createTextAttributesKey("PIG_STRING", SyntaxHighlighterColors.STRING);
   public static final TextAttributesKey FILENAME = createTextAttributesKey("PIG_FILENAME", SyntaxHighlighterColors.STRING);
   public static final TextAttributesKey EXEC_COMMAND = createTextAttributesKey("PIG_EXEC_COMMAND", SyntaxHighlighterColors.STRING);
+  public static final TextAttributesKey NUMBER = createTextAttributesKey("PIG_NUMBER", SyntaxHighlighterColors.NUMBER);
 
   static final TextAttributesKey BAD_CHARACTER = createTextAttributesKey("PIG_BAD_CHARACTER",
                                                                          new TextAttributes(Color.RED, null, null, null, Font.BOLD));
+
+  private static final Set<IElementType> _numberTypes= getNumberTypes();
+
+  private static Set<IElementType> getNumberTypes()
+  {
+    Set<IElementType> numberTypes = new HashSet<IElementType>(4);
+    numberTypes.add(PigTypes.NUM_SCALAR);
+    numberTypes.add(PigTypes.INTEGER_LITERAL);
+    numberTypes.add(PigTypes.LONG_LITERAL);
+    numberTypes.add(PigTypes.FLOAT_LITERAL);
+    numberTypes.add(PigTypes.DOUBLE_LITERAL);
+    return numberTypes;
+  }
+
 
   @NotNull
   @Override
@@ -58,6 +76,17 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
     if (tokenType.equals(PigTypes.FILENAME))
     {
       attributes.add(FILENAME);
+    }
+
+
+    if (_numberTypes.contains(tokenType))
+    {
+      attributes.add(NUMBER);
+    }
+
+    if (tokenType.equals(PigTypes.EXEC_LITERAL))
+    {
+      attributes.add(EXEC_COMMAND);
     }
 
     if (tokenType.equals(TokenType.BAD_CHARACTER)) {
