@@ -16,7 +16,7 @@
   //extends(".*_statement|comment")=statement
 }
 
-pigFile ::= statement*
+pigFile ::= (statement | comment)*
 //private recover_ ::= !(WHITE_SPACE)
 
 statement ::= SEMICOLON
@@ -296,6 +296,7 @@ rel_op_gte ::= STR_OP_GTE | GTEQ
 rel_op_lt ::= STR_OP_LT | LT
 rel_op_lte ::= STR_OP_LTE | LTEQ
 
+// TODO figure out how to do comments so they don't get caught in each rule but still are syntax highlighted
 comment ::= (C_STYLE_COMMENT |
              DOC_COMMENT |
              COMMENT_TAIL |
