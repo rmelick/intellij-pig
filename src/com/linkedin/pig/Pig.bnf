@@ -21,15 +21,19 @@ private recover_ ::= !(statement | comment)
 
 statement ::= SEMICOLON
             | general_statement
-            | import_statement
             | foreach_statement
             | split_statement
             | inline_statement
+            | import_statement
+            | realias_statement
 
 split_statement ::= split_clause SEMICOLON
 split_clause ::= SPLIT_KEYWORD rel INTO_KEYWORD split_branch ((COMMA split_branch)+ | (COMMA split_branch)* COMMA split_otherwise)
 split_branch ::= alias IF_KEYWORD cond
 split_otherwise ::= alias OTHERWISE_KEYWORD
+
+realias_statement ::= realias_clause SEMICOLON
+realias_clause ::= alias EQUAL id
 
 inline_statement ::= inline_clause SEMICOLON
 inline_clause ::= inline_return_clause alias inline_param_clause
