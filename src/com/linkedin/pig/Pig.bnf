@@ -16,8 +16,8 @@
   //extends(".*_statement|comment")=statement
 }
 
-pigFile ::= (statement | comment)*
-//private recover_ ::= !(WHITE_SPACE)
+pigFile ::= (statement | comment)* {recoverUntil="recover_"}
+private recover_ ::= !(statement | comment)
 
 statement ::= SEMICOLON
             | general_statement

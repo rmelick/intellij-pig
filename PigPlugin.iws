@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f314edf8-7661-427a-9ff7-d063282f88dd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigLexer.java" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/PigLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PigPlugin.iws" afterPath="$PROJECT_DIR$/PigPlugin.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" />
     </list>
     <ignored path="PigPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +14,7 @@
     <file path="/Dummy.txt" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363843830366" ignored="false" />
     <file path="/PigTokenType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753727864" ignored="false" />
     <file path="/PigElementType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753788982" ignored="false" />
-    <file path="/Pig.bnf" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364261515908" ignored="false" />
+    <file path="/Pig.bnf" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364267404075" ignored="false" />
     <file path="/Pig.flex" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364261869694" ignored="false" />
     <file path="/PigFile.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363803830967" ignored="false" />
     <file path="/PigParserDefinition.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363848947465" ignored="false" />
@@ -303,7 +300,7 @@
       <file leaf-file-name="Pig.bnf" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="44" selection-start="310" selection-end="310" vertical-scroll-proportion="0.375">
+            <state line="18" column="60" selection-start="589" selection-end="589" vertical-scroll-proportion="0.375">
               <folding />
             </state>
           </provider>
@@ -349,9 +346,9 @@
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java" />
         <option value="$PROJECT_DIR$/../intellij-community/platform/platform-api/src/com/intellij/openapi/fileTypes/SyntaxHighlighter.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/psi/impl/PigPsiUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex" />
+        <option value="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" />
       </list>
     </option>
   </component>
@@ -1540,7 +1537,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="310" selection-end="310" vertical-scroll-proportion="0.375">
+        <state line="18" column="60" selection-start="589" selection-end="589" vertical-scroll-proportion="0.375">
           <folding />
         </state>
       </provider>
