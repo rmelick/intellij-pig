@@ -13,6 +13,7 @@ import com.intellij.openapi.fileTypes.SyntaxHighlighterBase;
 import com.intellij.psi.TokenType;
 import com.intellij.psi.tree.IElementType;
 import com.linkedin.pig.psi.PigTypes;
+import com.linkedin.pig.psi.impl.PigCommentImpl;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
@@ -58,9 +59,10 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
   @NotNull
   @Override
   public TextAttributesKey[] getTokenHighlights(IElementType tokenType) {
+    System.out.println("Saw token type: " + tokenType);
     ArrayList<TextAttributesKey> attributes = new ArrayList<TextAttributesKey>();
 
-    if (tokenType.equals(PigTypes.COMMENT)) {
+    if (tokenType.equals(PigTypes.COMMENT) | tokenType.toString().endsWith("COMMENT")) {
       attributes.add(COMMENT);
     }
     if (tokenType.toString().endsWith("KEYWORD"))
@@ -77,7 +79,6 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
     {
       attributes.add(FILENAME);
     }
-
 
     if (_numberTypes.contains(tokenType))
     {

@@ -10,6 +10,7 @@ import com.intellij.psi.TokenType;
 %class PigLexer
 %implements FlexLexer
 %unicode
+%caseless
 %function advance
 %type IElementType
 %eof{  return;
