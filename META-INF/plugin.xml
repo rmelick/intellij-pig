@@ -1,17 +1,21 @@
 <idea-plugin version="2">
-  <id>com.yourcompany.unique.plugin.id</id>
+  <id>org.apache.pig.plugin.idea</id>
   <name>Pig</name>
   <version>1.0</version>
-  <vendor email="rmelick@cs.hmc.edu" url="http://www.cs.hmc.edu/~rmelick">YourCompany</vendor>
+  <vendor email="rmelick@cs.hmc.edu" url="https://github.com/rmelick/intellij-pig">OpenSource</vendor>
 
   <description><![CDATA[
       A plugin for the Pig language for Hadoop.<br>
-      <small>most HTML tags may be used</small>
       ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <small>most HTML tags may be used</small>
+      1.0: Initial version that supports syntax highlighting. Still missing<br>
+      <ul>
+       <li>References (Ctrl-Click to go to definition)</li>
+       <li>Error messages for bad syntax</li>
+       <li>:: operator</li>
+       <li>Parentheses/Brace matching</li>
+      <ul>
       ]]>
   </change-notes>
 
@@ -20,9 +24,8 @@
 
   <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
        on how to target different products -->
-  <!-- uncomment to enable plugin in all products
+  <!-- uncomment to enable plugin in all products -->
   <depends>com.intellij.modules.lang</depends>
-  -->
 
   <application-components>
     <!-- Add your application components here -->
