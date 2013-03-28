@@ -199,7 +199,7 @@ field_def ::= id (COLON type)?
 field_def_list ::= field_def (COMMA field_def)*
 
 type ::= simple_type | tuple_type | bag_type | map_type
-simple_type ::= INT_KEYWORD | LONG_KEYWORD | FLOAT_KEYWORD | DOUBLE_KEYWORD | CHARARRAY_KEYWORD
+simple_type ::= INT_KEYWORD | LONG_KEYWORD | FLOAT_KEYWORD | DOUBLE_KEYWORD | CHARARRAY_KEYWORD | BYTEARRAY_KEYWORD | BOOLEAN_KEYWORD
 tuple_type ::= TUPLE_KEYWORD? LPARENTH field_def_list? RPARENTH
 bag_type ::= BAG_KEYWORD? LBRACE ((id COLON)? tuple_type)? RBRACE
 map_type ::= MAP_KEYWORD? LBRACK type? RBRACK
