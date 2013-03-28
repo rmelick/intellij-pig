@@ -40,7 +40,8 @@ realias_clause ::= alias EQUAL id
 
 preprocessor_statement ::= variable_set
 
-register_statement ::= REGISTER_KEYWORD path SEMICOLON
+register_statement ::= REGISTER_KEYWORD REGISTER_FILENAME SEMICOLON
+register_statementOld ::= REGISTER_KEYWORD path SEMICOLON
 path ::= DIV? IDENTIFIER (DIV IDENTIFIER)* file_suffix
 file_suffix ::= STAR? DOT IDENTIFIER
 

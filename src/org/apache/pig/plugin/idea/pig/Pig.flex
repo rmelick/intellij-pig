@@ -1,8 +1,8 @@
-package com.linkedin.pig;
+package org.apache.pig.plugin.idea.pig;
  
 import com.intellij.lexer.FlexLexer;
 import com.intellij.psi.tree.IElementType;
-import com.linkedin.pig.psi.PigTypes;
+import org.apache.pig.plugin.idea.pig.psi.PigTypes;
 import com.intellij.psi.TokenType;
  
 %%
@@ -13,8 +13,9 @@ import com.intellij.psi.TokenType;
 %caseless
 %function advance
 %type IElementType
-%eof{  return;
+%eof{
 %eof}
+%state REGISTER
 
 /* main character classes */
 DIGIT=[0-9]
@@ -49,6 +50,9 @@ EXPONENT_PART=[Ee]["+""-"]?({DIGIT})*
 EXEC_LITERAL="`"([^\\`\r\n]|{ESCAPE_SEQUENCE})*("`"|\\)?
 STRING_LITERAL=\'([^\\\'\r\n]|{ESCAPE_SEQUENCE})*(\'|\\)?
 ESCAPE_SEQUENCE=\\[^\r\n]
+
+SEMI_OR_WHITE=({WHITE_SPACE})|(";")
+REGISTER_FILENAME=([^";"])*
 
 %%
 
@@ -118,7 +122,13 @@ ESCAPE_SEQUENCE=\\[^\r\n]
 <YYINITIAL> "OUTPUT" { return PigTypes.OUTPUT_KEYWORD; }
 <YYINITIAL> "PARALLEL" { return PigTypes.PARALLEL_KEYWORD; }
 <YYINITIAL> "PARTITION" { return PigTypes.PARTITION_KEYWORD; }
-<YYINITIAL> "REGISTER" { return PigTypes.REGISTER_KEYWORD; } /* TODO rmelick Lex the filename after the register statement separately (so we can use regexes there easily */
+
+
+<YYINITIAL> "REGISTER" { yybegin(REGISTER); return PigTypes.REGISTER_KEYWORD; }
+<REGISTER> {REGISTER_FILENAME} { yybegin(YYINITIAL); return PigTypes.REGISTER_FILENAME; }
+
+/*<YYINITIAL> "REGISTER" { return PigTypes.REGISTER_KEYWORD; }*/
+
 <YYINITIAL> "RETURNS" { return PigTypes.RETURNS_KEYWORD; }
 <YYINITIAL> "RIGHT" { return PigTypes.RIGHT_KEYWORD; }
 <YYINITIAL> "RMF" { return PigTypes.RMF_KEYWORD; }
@@ -181,3 +191,8 @@ ESCAPE_SEQUENCE=\\[^\r\n]
 <YYINITIAL> "::" { return PigTypes.DCOLON; }
 
 <YYINITIAL> . { return TokenType.BAD_CHARACTER; }
+
+/* error fallback */
+.|\n                             { throw new Error("Illegal character <"+
+                                                    yytext()+">" + "in state" + yystate()); }
+
