@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f314edf8-7661-427a-9ff7-d063282f88dd" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/Pig.bnf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/Pig.flex" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigColorSettingsPage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigFileType.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigFileType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigFileTypeFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigFileTypeFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigIcons.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigIcons.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigKeywordCompletionContributor.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigKeywordCompletionContributor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigLanguage.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigLanguage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigLexer.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigLexer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigParserDefinition.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigParserDefinition.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigSyntaxHighlighter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighterFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigSyntaxHighlighterFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/icons/jar-gray.png" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/icons/jar-gray.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/parser/GeneratedParserUtilBase.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/parser/GeneratedParserUtilBase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/psi/PigElementType.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigElementType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/psi/PigFile.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/psi/PigTokenType.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigTokenType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/scratch.txt" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/scratch.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
-    </list>
+    <list default="true" id="f314edf8-7661-427a-9ff7-d063282f88dd" name="Default" comment="" />
     <ignored path="PigPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PigLanguage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752529881" ignored="false" />
