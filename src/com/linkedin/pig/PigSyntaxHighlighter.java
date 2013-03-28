@@ -30,8 +30,14 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
   public static final TextAttributesKey KEYWORD = createTextAttributesKey("PIG_KEYWORD", SyntaxHighlighterColors.KEYWORD);
   public static final TextAttributesKey STRING = createTextAttributesKey("PIG_STRING", SyntaxHighlighterColors.STRING);
   public static final TextAttributesKey FILENAME = createTextAttributesKey("PIG_FILENAME", SyntaxHighlighterColors.STRING);
-  public static final TextAttributesKey EXEC_COMMAND = createTextAttributesKey("PIG_EXEC_COMMAND", SyntaxHighlighterColors.STRING);
   public static final TextAttributesKey NUMBER = createTextAttributesKey("PIG_NUMBER", SyntaxHighlighterColors.NUMBER);
+
+
+  public static final TextAttributesKey EXEC_COMMAND = createTextAttributesKey("PIG_EXEC_COMMAND",
+                                                                               new TextAttributes(Color.ORANGE, null, null, null, Font.PLAIN));
+
+  public static final TextAttributesKey PREPROCESSOR_COMMAND = createTextAttributesKey("PIG_PRE_PROCESSOR",
+                                                                                       new TextAttributes(Color.BLUE, null, null, null, Font.PLAIN));
 
   static final TextAttributesKey BAD_CHARACTER = createTextAttributesKey("PIG_BAD_CHARACTER",
                                                                          new TextAttributes(Color.RED, null, null, null, Font.BOLD));
@@ -65,6 +71,17 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
     if (tokenType.equals(PigTypes.COMMENT) | tokenType.toString().endsWith("COMMENT")) {
       attributes.add(COMMENT);
     }
+
+    if (tokenType.equals(PigTypes.DECLARE_COMMAND) || tokenType.equals(PigTypes.DEFAULT_COMMAND))
+    {
+      attributes.add(PREPROCESSOR_COMMAND);
+    }
+
+    if (tokenType.equals(PigTypes.PATH))
+    {
+      attributes.add(FILENAME);
+    }
+
     if (tokenType.toString().endsWith("KEYWORD"))
     {
       attributes.add(KEYWORD);
@@ -98,6 +115,6 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
       System.err.println("Unrecognized token type: " + tokenType);
     }
 
-    return attributes.toArray(new TextAttributesKey[]{});
+    return attributes.toArray(new TextAttributesKey[attributes.size()]);
   }
 }

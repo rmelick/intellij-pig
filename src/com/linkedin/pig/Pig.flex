@@ -71,6 +71,9 @@ ESCAPE_SEQUENCE=\\[^\r\n]
 
 <YYINITIAL> "NULL" { return PigTypes.NULL_KEYWORD; }
 
+<YYINITIAL> "%DECLARE" { return PigTypes.DECLARE_COMMAND; }
+<YYINITIAL> "%DEFAULT" { return PigTypes.DEFAULT_COMMAND; }
+
  /* keywords */
 <YYINITIAL> "ALL" { return PigTypes.ALL_KEYWORD; }
 <YYINITIAL> "ANY" { return PigTypes.ANY_KEYWORD; }
@@ -115,8 +118,10 @@ ESCAPE_SEQUENCE=\\[^\r\n]
 <YYINITIAL> "OUTPUT" { return PigTypes.OUTPUT_KEYWORD; }
 <YYINITIAL> "PARALLEL" { return PigTypes.PARALLEL_KEYWORD; }
 <YYINITIAL> "PARTITION" { return PigTypes.PARTITION_KEYWORD; }
+<YYINITIAL> "REGISTER" { return PigTypes.REGISTER_KEYWORD; } /* TODO rmelick Lex the filename after the register statement separately (so we can use regexes there easily */
 <YYINITIAL> "RETURNS" { return PigTypes.RETURNS_KEYWORD; }
 <YYINITIAL> "RIGHT" { return PigTypes.RIGHT_KEYWORD; }
+<YYINITIAL> "RMF" { return PigTypes.RMF_KEYWORD; }
 <YYINITIAL> "SAMPLE" { return PigTypes.SAMPLE_KEYWORD; }
 <YYINITIAL> "SET" { return PigTypes.SET_KEYWORD; }
 <YYINITIAL> "SHIP" { return PigTypes.SHIP_KEYWORD; }

@@ -1,11 +1,11 @@
 <idea-plugin version="2">
   <id>com.yourcompany.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <name>Pig</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="rmelick@cs.hmc.edu" url="http://www.cs.hmc.edu/~rmelick">YourCompany</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
+      A plugin for the Pig language for Hadoop.<br>
       <small>most HTML tags may be used</small>
       ]]></description>
 

@@ -2,25 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f314edf8-7661-427a-9ff7-d063282f88dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/PigKeywordCompletionContributor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigLexer.java" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/PigLexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PigPlugin.ipr" afterPath="$PROJECT_DIR$/PigPlugin.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PigPlugin.iws" afterPath="$PROJECT_DIR$/PigPlugin.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" afterPath="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
     </list>
     <ignored path="PigPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PigLanguage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752529881" ignored="false" />
     <file path="/PigFileType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752874786" ignored="false" />
     <file path="/PigFileTypeFactory.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752953671" ignored="false" />
-    <file path="/plugin.xml" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363806275493" ignored="false" />
+    <file path="/plugin.xml" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364427130186" ignored="false" />
     <file path="/fragment.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363805760098" ignored="false" />
     <file path="/Dummy.txt" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363843830366" ignored="false" />
     <file path="/PigTokenType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753727864" ignored="false" />
     <file path="/PigElementType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753788982" ignored="false" />
-    <file path="/Pig.bnf" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364268209159" ignored="false" />
-    <file path="/Pig.flex" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364261869694" ignored="false" />
+    <file path="/Pig.bnf" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364446314217" ignored="false" />
+    <file path="/Pig.flex" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364445615271" ignored="false" />
     <file path="/PigFile.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363803830967" ignored="false" />
     <file path="/PigParserDefinition.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363848947465" ignored="false" />
-    <file path="/PigSyntaxHighlighter.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364261671638" ignored="false" />
+    <file path="/PigSyntaxHighlighter.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364445769991" ignored="false" />
     <file path="/PigSyntaxHighlighterFactory.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363805855843" ignored="false" />
-    <file path="/PigColorSettingsPage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364196123387" ignored="false" />
+    <file path="/PigColorSettingsPage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364270300309" ignored="false" />
     <file path="/test.bnf.preview" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363841821785" ignored="false" />
     <file path="/Pig.bnf.preview" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363845239309" ignored="false" />
     <file path="/PigJoinTypeImpl.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363996912147" ignored="false" />
@@ -30,6 +38,10 @@
     <file path="/guest-opt-out.properties" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364254246760" ignored="false" />
     <file path="$PROJECT_DIR$/../comm-guest-opt-out_trunk/guest-opt-out-azkaban/conf/properties/guest-opt-out.properties" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364254246760" ignored="false" />
     <file path="/PigPsiUtils.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364261510698" ignored="false" />
+    <file path="$PROJECT_DIR$/../intellij-community/java/java-psi-impl/src/com/intellij/codeInsight/ExceptionUtil.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364269894445" ignored="false" />
+    <file path="$PROJECT_DIR$/../intellij-community/platform/platform-api/src/com/intellij/openapi/editor/LogicalPosition.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364269894445" ignored="false" />
+    <file path="/a.dummy" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364427038123" ignored="false" />
+    <file path="/PigKeywordCompletionContributor.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364400373274" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +95,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" line="60" class="com.linkedin.pig.PigSyntaxHighlighter" package="com.linkedin.pig">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" line="66" class="com.linkedin.pig.PigSyntaxHighlighter" package="com.linkedin.pig">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -110,150 +122,69 @@
       <file leaf-file-name="PigSyntaxHighlighter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="840" selection-end="840" vertical-scroll-proportion="9.807693">
+            <state line="81" column="29" selection-start="3543" selection-end="3543" vertical-scroll-proportion="-9.807693">
               <folding>
-                <element signature="e#2179#2193#0" expanded="true" />
-                <element signature="e#2789#2808#0" expanded="true" />
+                <element signature="e#2551#2565#0" expanded="true" />
+                <element signature="e#3161#3180#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pig.flex" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex">
+      <file leaf-file-name="SyntaxHighlighterColors.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/editor/SyntaxHighlighterColors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="37" selection-start="7232" selection-end="7235" vertical-scroll-proportion="-5.1923075">
-              <folding>
-                <marker date="1364261979000" expanded="false" signature="35:180" placeholder="..." />
-                <marker date="1364261979000" expanded="true" signature="1669:1700" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="1734:1768" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="1805:1843" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="1872:1902" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="1933:1964" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="1997:2031" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2062:2094" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2126:2159" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2190:2221" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2253:2286" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2309:2340" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2363:2395" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2418:2449" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2487:2517" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2538:2568" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2588:2617" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2638:2668" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2689:2719" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2739:2768" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2791:2823" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2850:2886" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2911:2945" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="2968:3000" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3024:3057" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3079:3110" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3136:3171" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3195:3228" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3252:3285" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3310:3344" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3367:3399" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3424:3458" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3480:3511" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3537:3572" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3595:3627" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3647:3676" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3700:3733" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3753:3782" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3805:3837" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3860:3892" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3913:3943" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="3965:3996" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4016:4045" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4067:4098" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4120:4151" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4174:4206" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4228:4259" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4281:4312" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4333:4363" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4390:4426" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4452:4487" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4510:4542" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4569:4605" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4628:4660" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4684:4717" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4743:4778" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4805:4841" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4866:4900" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4923:4955" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="4979:5012" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5033:5063" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5085:5116" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5139:5171" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5195:5230" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5253:5285" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5309:5342" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5365:5397" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5421:5454" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5479:5513" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5536:5568" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5591:5623" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5646:5678" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5700:5731" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5752:5782" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5803:5833" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5853:5882" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5902:5930" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5950:5978" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="5998:6026" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6047:6076" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6097:6126" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6147:6175" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6200:6233" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6262:6291" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6330:6357" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6376:6403" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6422:6447" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6466:6491" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6510:6535" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6554:6579" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6598:6626" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6645:6669" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6688:6710" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6748:6772" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6791:6812" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6831:6852" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6871:6895" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6914:6938" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="6958:6981" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7001:7024" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7044:7067" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7087:7111" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7130:7153" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7172:7196" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7215:7238" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7257:7279" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7298:7322" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7341:7367" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7387:7419" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7440:7465" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7485:7510" placeholder="{...}" />
-                <marker date="1364261979000" expanded="true" signature="7528:7561" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PigElementType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/psi/PigElementType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+            <state line="24" column="13" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PigLoadClauseImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/impl/PigLoadClauseImpl.java">
+      <file leaf-file-name="JavaSyntaxHighlighterFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../intellij-community/java/java-impl/src/com/intellij/lang/java/JavaSyntaxHighlighterFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+            <state line="30" column="23" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaFileHighlighter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../intellij-community/java/java-impl/src/com/intellij/ide/highlighter/JavaFileHighlighter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="9" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PigKeywordCompletionContributor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigKeywordCompletionContributor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="60" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#632#1014#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="24" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PigTypes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/PigTypes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="277" column="29" selection-start="17219" selection-end="17219" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -262,53 +193,145 @@
       <file leaf-file-name="Pig.bnf" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="43" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.5833333">
+            <state line="50" column="49" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.91501415">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PigFileTypeFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigFileTypeFactory.java">
+      <file leaf-file-name="PigLexer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigLexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="1061" column="27" selection-start="40641" selection-end="40641" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PigFileType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigFileType.java">
+      <file leaf-file-name="Pig.flex" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PigLanguage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigLanguage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PigParserDefinition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigParserDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="13" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PigSyntaxHighlighterFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighterFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="120" column="169" selection-start="5133" selection-end="5133" vertical-scroll-proportion="-2.8846154">
+              <folding>
+                <marker date="1364445631000" expanded="true" signature="35:180" placeholder="..." />
+                <marker date="1364445631000" expanded="true" signature="1669:1700" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="1734:1768" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="1805:1843" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="1872:1902" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="1933:1964" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="1997:2031" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2062:2094" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2126:2159" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2190:2221" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2253:2286" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2309:2340" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2363:2395" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2418:2449" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2476:2510" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2536:2570" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2608:2638" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2659:2689" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2709:2738" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2759:2789" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2810:2840" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2860:2889" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2912:2944" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="2971:3007" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3032:3066" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3089:3121" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3145:3178" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3200:3231" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3257:3292" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3316:3349" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3373:3406" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3431:3465" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3488:3520" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3545:3579" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3601:3632" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3658:3693" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3716:3748" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3768:3797" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3821:3854" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3874:3903" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3926:3958" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="3981:4013" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4034:4064" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4086:4117" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4137:4166" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4188:4219" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4241:4272" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4295:4327" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4349:4380" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4402:4433" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4454:4484" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4511:4547" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4573:4608" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4631:4663" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4690:4726" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4749:4781" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4805:4838" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4864:4899" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4926:4962" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="4988:5023" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5160:5194" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5217:5249" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5270:5300" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5324:5357" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5378:5408" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5430:5461" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5484:5516" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5540:5575" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5598:5630" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5654:5687" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5710:5742" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5766:5799" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5824:5858" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5881:5913" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5936:5968" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="5991:6023" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6045:6076" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6097:6127" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6148:6178" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6198:6227" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6247:6275" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6295:6323" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6343:6371" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6392:6421" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6442:6471" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6492:6520" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6545:6578" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6607:6636" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6675:6702" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6721:6748" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6767:6792" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6811:6836" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6855:6880" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6899:6924" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6943:6971" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="6990:7014" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7033:7055" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7093:7117" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7136:7157" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7176:7197" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7216:7240" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7259:7283" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7303:7326" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7346:7369" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7389:7412" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7432:7456" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7475:7498" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7517:7541" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7560:7583" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7602:7624" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7643:7667" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7686:7712" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7732:7764" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7785:7810" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7830:7855" placeholder="{...}" />
+                <marker date="1364445631000" expanded="true" signature="7873:7906" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -331,8 +354,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighterFactory.java" />
-        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
         <option value="/test.bnf.preview" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/test.bnf" />
         <option value="/Pig.bnf.preview" />
@@ -341,17 +362,19 @@
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigParserDefinition.java" />
         <option value="$PROJECT_DIR$/gen/com/linkedin/pig/psi/impl/PigJoinTypeImpl.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/scratch.txt" />
-        <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java" />
         <option value="$PROJECT_DIR$/../intellij-community/platform/platform-api/src/com/intellij/openapi/fileTypes/SyntaxHighlighter.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/psi/impl/PigPsiUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" />
+        <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java" />
+        <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigKeywordCompletionContributor.java" />
+        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex" />
+        <option value="$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java" />
         <option value="$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="422" />
+    <option name="x" value="4" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="790" />
@@ -722,6 +745,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeInsight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeInsight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="completion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="idea.jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -745,6 +824,152 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="options" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="options" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -900,6 +1125,140 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeInsight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeInsight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="completion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IC-123.169 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PigPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="PigPlugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1019,36 +1378,6 @@
               <option name="myItemId" value="pig" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="psi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PigPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PigPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1057,13 +1386,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/linkedin/pig" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="org.intellij.lang.jflex.options.JFlexConfigurable" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Java" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../comm-guest-opt-out_trunk/comm-guest-opt-out_trunk.ipr" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -1221,23 +1553,23 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="ToolWindowManager">
-    <frame x="422" y="22" width="1440" height="790" extended-state="6" />
+    <frame x="4" y="22" width="1440" height="790" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33880597" sideWeight="0.49713057" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39850748" sideWeight="0.48852223" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39850748" sideWeight="0.47417504" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.77874815" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5559541" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33880597" sideWeight="0.4978479" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4477612" sideWeight="0.3723099" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4477612" sideWeight="0.3701578" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.20895523" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.4522388" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.4390244" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.20447761" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.44626865" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.446198" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1306,236 +1638,322 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/psi/PigFile.java">
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/awt/Color.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
+        <state line="22" column="43" selection-start="913" selection-end="919" vertical-scroll-proportion="-3.3461537">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/parser/GeneratedParserUtilBase.java">
+    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigColorSettingsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/PigLoadClause.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="206" selection-end="219" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/platform-api/src/com/intellij/openapi/fileTypes/SyntaxHighlighterBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../intellij-community/java/java-impl/src/com/intellij/ide/highlighter/JavaFileHighlighter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="67" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0">
+        <state line="22" column="48" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/platform-api/src/com/intellij/openapi/fileTypes/SyntaxHighlighter.java">
+    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/core-api/src/com/intellij/psi/PsiFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="2590" selection-end="2590" vertical-scroll-proportion="0.0">
+        <state line="73" column="19" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/impl/PigLoadClauseImpl.java">
+    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/codeInsight/completion/CompletionContributor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+        <state line="125" column="0" selection-start="9028" selection-end="9028" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/psi/PigElementType.java">
+    <entry file="file://$PROJECT_DIR$/../intellij-community/xml/impl/src/com/intellij/codeInsight/completion/XmlCompletionContributor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigFileTypeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigFileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigLanguage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+        <state line="55" column="13" selection-start="2078" selection-end="2078" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigParserDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="13" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
+        <state line="74" column="35" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighterFactory.java">
+    <entry file="file://$PROJECT_DIR$/gen/com/linkedin/pig/psi/PigTypes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+        <state line="277" column="29" selection-start="17219" selection-end="17219" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigKeywordCompletionContributor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="840" selection-end="840" vertical-scroll-proportion="9.807693">
+        <state line="8" column="60" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#2179#2193#0" expanded="true" />
-            <element signature="e#2789#2808#0" expanded="true" />
+            <element signature="e#632#1014#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../intellij-community/java/java-impl/src/com/intellij/lang/java/JavaSyntaxHighlighterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="23" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../intellij-community/platform/lang-api/src/com/intellij/openapi/editor/SyntaxHighlighterColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../intellij-community/java/java-impl/src/com/intellij/ide/highlighter/JavaFileHighlighter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="9" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1061" column="27" selection-start="40641" selection-end="40641" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.flex">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="37" selection-start="7232" selection-end="7235" vertical-scroll-proportion="-5.1923075">
+        <state line="120" column="169" selection-start="5133" selection-end="5133" vertical-scroll-proportion="-2.8846154">
           <folding>
-            <marker date="1364261979000" expanded="false" signature="35:180" placeholder="..." />
-            <marker date="1364261979000" expanded="true" signature="1669:1700" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="1734:1768" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="1805:1843" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="1872:1902" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="1933:1964" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="1997:2031" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2062:2094" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2126:2159" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2190:2221" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2253:2286" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2309:2340" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2363:2395" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2418:2449" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2487:2517" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2538:2568" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2588:2617" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2638:2668" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2689:2719" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2739:2768" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2791:2823" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2850:2886" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2911:2945" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="2968:3000" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3024:3057" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3079:3110" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3136:3171" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3195:3228" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3252:3285" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3310:3344" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3367:3399" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3424:3458" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3480:3511" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3537:3572" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3595:3627" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3647:3676" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3700:3733" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3753:3782" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3805:3837" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3860:3892" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3913:3943" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="3965:3996" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4016:4045" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4067:4098" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4120:4151" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4174:4206" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4228:4259" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4281:4312" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4333:4363" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4390:4426" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4452:4487" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4510:4542" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4569:4605" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4628:4660" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4684:4717" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4743:4778" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4805:4841" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4866:4900" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4923:4955" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="4979:5012" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5033:5063" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5085:5116" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5139:5171" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5195:5230" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5253:5285" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5309:5342" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5365:5397" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5421:5454" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5479:5513" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5536:5568" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5591:5623" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5646:5678" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5700:5731" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5752:5782" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5803:5833" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5853:5882" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5902:5930" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5950:5978" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="5998:6026" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6047:6076" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6097:6126" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6147:6175" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6200:6233" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6262:6291" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6330:6357" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6376:6403" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6422:6447" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6466:6491" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6510:6535" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6554:6579" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6598:6626" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6645:6669" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6688:6710" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6748:6772" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6791:6812" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6831:6852" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6871:6895" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6914:6938" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="6958:6981" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7001:7024" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7044:7067" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7087:7111" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7130:7153" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7172:7196" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7215:7238" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7257:7279" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7298:7322" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7341:7367" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7387:7419" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7440:7465" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7485:7510" placeholder="{...}" />
-            <marker date="1364261979000" expanded="true" signature="7528:7561" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="35:180" placeholder="..." />
+            <marker date="1364445631000" expanded="true" signature="1669:1700" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="1734:1768" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="1805:1843" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="1872:1902" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="1933:1964" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="1997:2031" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2062:2094" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2126:2159" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2190:2221" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2253:2286" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2309:2340" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2363:2395" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2418:2449" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2476:2510" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2536:2570" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2608:2638" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2659:2689" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2709:2738" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2759:2789" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2810:2840" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2860:2889" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2912:2944" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="2971:3007" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3032:3066" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3089:3121" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3145:3178" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3200:3231" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3257:3292" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3316:3349" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3373:3406" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3431:3465" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3488:3520" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3545:3579" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3601:3632" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3658:3693" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3716:3748" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3768:3797" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3821:3854" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3874:3903" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3926:3958" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="3981:4013" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4034:4064" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4086:4117" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4137:4166" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4188:4219" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4241:4272" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4295:4327" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4349:4380" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4402:4433" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4454:4484" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4511:4547" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4573:4608" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4631:4663" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4690:4726" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4749:4781" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4805:4838" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4864:4899" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4926:4962" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="4988:5023" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5160:5194" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5217:5249" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5270:5300" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5324:5357" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5378:5408" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5430:5461" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5484:5516" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5540:5575" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5598:5630" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5654:5687" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5710:5742" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5766:5799" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5824:5858" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5881:5913" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5936:5968" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="5991:6023" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6045:6076" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6097:6127" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6148:6178" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6198:6227" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6247:6275" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6295:6323" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6343:6371" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6392:6421" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6442:6471" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6492:6520" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6545:6578" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6607:6636" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6675:6702" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6721:6748" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6767:6792" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6811:6836" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6855:6880" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6899:6924" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6943:6971" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="6990:7014" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7033:7055" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7093:7117" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7136:7157" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7176:7197" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7216:7240" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7259:7283" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7303:7326" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7346:7369" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7389:7412" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7432:7456" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7475:7498" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7517:7541" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7560:7583" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7602:7624" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7643:7667" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7686:7712" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7732:7764" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7785:7810" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7830:7855" placeholder="{...}" />
+            <marker date="1364445631000" expanded="true" signature="7873:7906" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/PigSyntaxHighlighter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="29" selection-start="3543" selection-end="3543" vertical-scroll-proportion="-9.807693">
+          <folding>
+            <element signature="e#2551#2565#0" expanded="true" />
+            <element signature="e#3161#3180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/linkedin/pig/Pig.bnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="43" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.5833333">
+        <state line="50" column="49" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.91501415">
           <folding />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>IDEA IC-123.169</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>PigPlugin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
