@@ -2,7 +2,7 @@
   <id>org.apache.pig.plugin.idea</id>
   <name>Pig</name>
   <version>1.0</version>
-  <vendor email="rmelick@cs.hmc.edu" url="https://github.com/rmelick/intellij-pig">OpenSource</vendor>
+  <vendor email="rmelick@cs.hmc.edu" url="https://github.com/rmelick/intellij-pig">open source</vendor>
 
   <description><![CDATA[
       A plugin for the Pig language for Hadoop.<br>
@@ -41,9 +41,9 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-      <fileTypeFactory implementation="com.linkedin.pig.PigFileTypeFactory"/>
-      <lang.parserDefinition language="Pig" implementationClass="com.linkedin.pig.PigParserDefinition"/>
-      <lang.syntaxHighlighterFactory key="Pig" implementationClass="com.linkedin.pig.PigSyntaxHighlighterFactory"/>
-      <colorSettingsPage implementation="com.linkedin.pig.PigColorSettingsPage"/>
+      <fileTypeFactory implementation="org.apache.pig.plugin.idea.pig.PigFileTypeFactory"/>
+      <lang.parserDefinition language="Pig" implementationClass="org.apache.pig.plugin.idea.pig.PigParserDefinition"/>
+      <lang.syntaxHighlighterFactory key="Pig" implementationClass="org.apache.pig.plugin.idea.pig.PigSyntaxHighlighterFactory"/>
+      <colorSettingsPage implementation="org.apache.pig.plugin.idea.pig.PigColorSettingsPage"/>
   </extensions>
 </idea-plugin>

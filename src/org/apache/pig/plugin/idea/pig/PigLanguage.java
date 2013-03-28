@@ -1,4 +1,4 @@
-package com.linkedin.pig;
+package org.apache.pig.plugin.idea.pig;
 
 import com.intellij.lang.Language;
 

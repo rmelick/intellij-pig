@@ -1,4 +1,4 @@
-package com.linkedin.pig.psi;
+package org.apache.pig.plugin.idea.pig.psi;
 
 /**
  * @author: rmelick <rmelick@linkedin.com>
@@ -8,8 +8,8 @@ package com.linkedin.pig.psi;
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
-import com.linkedin.pig.PigFileType;
-import com.linkedin.pig.PigLanguage;
+import org.apache.pig.plugin.idea.pig.PigFileType;
+import org.apache.pig.plugin.idea.pig.PigLanguage;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;

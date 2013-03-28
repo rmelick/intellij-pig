@@ -1,4 +1,4 @@
-package com.linkedin.pig.parser;
+package org.apache.pig.plugin.idea.pig.parser;
 
 import com.intellij.lang.*;
 import com.intellij.lang.impl.PsiBuilderAdapter;

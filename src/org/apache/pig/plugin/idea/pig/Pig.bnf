@@ -1,17 +1,17 @@
 {
-  parserClass="com.linkedin.pig.parser.PigParser"
-  stubParserClass="com.linkedin.pig.parser.GeneratedParserUtilBase"
+  parserClass="org.apache.pig.plugin.idea.pig.parser.PigParser"
+  stubParserClass="org.apache.pig.plugin.idea.pig.parser.GeneratedParserUtilBase"
 
   extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
 
   psiClassPrefix="Pig"
   psiImplClassSuffix="Impl"
-  psiPackage="com.linkedin.pig.psi"
-  psiImplPackage="com.linkedin.pig.psi.impl"
+  psiPackage="org.apache.pig.plugin.idea.pig.psi"
+  psiImplPackage="org.apache.pig.plugin.idea.pig.psi.impl"
 
-  elementTypeHolderClass="com.linkedin.pig.psi.PigTypes"
-  elementTypeClass="com.linkedin.pig.psi.PigElementType"
-  tokenTypeClass="com.linkedin.pig.psi.PigTokenType"
+  elementTypeHolderClass="org.apache.pig.plugin.idea.pig.psi.PigTypes"
+  elementTypeClass="org.apache.pig.plugin.idea.pig.psi.PigElementType"
+  tokenTypeClass="org.apache.pig.plugin.idea.pig.psi.PigTokenType"
 
   //extends(".*_statement|comment")=statement
 }

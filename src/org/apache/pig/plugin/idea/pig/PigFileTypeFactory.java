@@ -1,4 +1,4 @@
-package com.linkedin.pig;
+package org.apache.pig.plugin.idea.pig;
 
 /**
  * @author: rmelick <rmelick@linkedin.com>

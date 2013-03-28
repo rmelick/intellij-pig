@@ -1,4 +1,4 @@
-package com.linkedin.pig;
+package org.apache.pig.plugin.idea.pig;
 /**
  * @author: rmelick <rmelick@linkedin.com>
  * Date: 3/20/13
@@ -12,8 +12,7 @@ import com.intellij.openapi.editor.markup.TextAttributes;
 import com.intellij.openapi.fileTypes.SyntaxHighlighterBase;
 import com.intellij.psi.TokenType;
 import com.intellij.psi.tree.IElementType;
-import com.linkedin.pig.psi.PigTypes;
-import com.linkedin.pig.psi.impl.PigCommentImpl;
+import org.apache.pig.plugin.idea.pig.psi.PigTypes;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
