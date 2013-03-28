@@ -18,3 +18,7 @@ Most of the official pig grammar can be found here:
 
 https://svn.apache.org/repos/asf/pig/tags/release-0.11.1-rc0/src/org/apache/pig/parser/QueryParser.g
 
+This is licensed under the Apache2 license, although I haven't yet put it into all the source code yet.
+
+http://www.apache.org/licenses/LICENSE-2.0
+
