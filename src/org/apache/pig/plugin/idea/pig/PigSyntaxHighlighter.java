@@ -76,7 +76,7 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
       attributes.add(PREPROCESSOR_COMMAND);
     }
 
-    if (tokenType.equals(PigTypes.PATH))
+    if (tokenType.equals(PigTypes.LEXED_FILENAME))
     {
       attributes.add(FILENAME);
     }

@@ -28,7 +28,7 @@ statement ::= SEMICOLON
             | realias_statement
             | preprocessor_statement
             | register_statement
-            | hadoop_cmd
+            | hadoop_fs_statement
 
 split_statement ::= split_clause SEMICOLON
 split_clause ::= SPLIT_KEYWORD rel INTO_KEYWORD split_branch ((COMMA split_branch)+ | (COMMA split_branch)* COMMA split_otherwise)
@@ -38,18 +38,20 @@ split_otherwise ::= alias OTHERWISE_KEYWORD
 realias_statement ::= realias_clause SEMICOLON
 realias_clause ::= alias EQUAL id
 
-preprocessor_statement ::= variable_set
+preprocessor_statement ::= variable_set | property_set
 
-register_statement ::= REGISTER_KEYWORD REGISTER_FILENAME SEMICOLON
-register_statementOld ::= REGISTER_KEYWORD path SEMICOLON
-path ::= DIV? IDENTIFIER (DIV IDENTIFIER)* file_suffix
-file_suffix ::= STAR? DOT IDENTIFIER
+register_statement ::= REGISTER_KEYWORD LEXED_FILENAME SEMICOLON
+
+property_set ::= SET_KEYWORD property_key property_value {pin=1}
+property_key ::= id (DOT id)*
+property_value ::= STRING_LITERAL
 
 variable_set ::= (DECLARE_COMMAND | DEFAULT_COMMAND) param_name param_value
 param_name ::= id
 param_value ::= STRING_LITERAL | EXEC_LITERAL
 
-hadoop_cmd ::= RMF_KEYWORD (path | STRING_LITERAL)
+hadoop_fs_statement ::= RMF_KEYWORD rmf_file SEMICOLON
+rmf_file ::= LEXED_FILENAME | STRING_LITERAL
 
 inline_statement ::= inline_clause SEMICOLON
 inline_clause ::= inline_return_clause alias inline_param_clause
@@ -326,6 +328,6 @@ comment ::= (C_STYLE_COMMENT |
 
 
 //TODO figure out why these aren't being used
-unused ::= DCOLON | SET_KEYWORD | IN_KEYWORD | RMF_KEYWORD
+unused ::= DCOLON | IN_KEYWORD
 
 //other ::= ( EXEC_LITERAL | NULL_KEYWORD | AS_KEYWORD | ASC_KEYWORD | BAG_KEYWORD | BY_KEYWORD | CACHE_KEYWORD | CHARARRAY_KEYWORD | COGROUP_KEYWORD | CROSS_KEYWORD | DEFINE_KEYWORD | DESC_KEYWORD | DISTINCT_KEYWORD | DOUBLE_KEYWORD | FILTER_KEYWORD | FLATTEN_KEYWORD | FLOAT_KEYWORD | FOREACH_KEYWORD | FULL_KEYWORD | GENERATE_KEYWORD | GROUP_KEYWORD | IF_KEYWORD | IN_KEYWORD | INNER_KEYWORD | INPUT_KEYWORD | INT_KEYWORD | INTO_KEYWORD | IS_KEYWORD | JOIN_KEYWORD | LEFT_KEYWORD | LIMIT_KEYWORD | LONG_KEYWORD | MAP_KEYWORD | MAPREDUCE_KEYWORD | ONSCHEMA_KEYWORD | ORDER_KEYWORD | OUTER_KEYWORD | OUTPUT_KEYWORD | PARALLEL_KEYWORD | PARTITION_KEYWORD | RETURNS_KEYWORD | RIGHT_KEYWORD | SAMPLE_KEYWORD | SET_KEYWORD | SHIP_KEYWORD | SPLIT_KEYWORD | STDERROR_KEYWORD | STDIN_KEYWORD | STDOUT_KEYWORD | STORE_KEYWORD | STREAM_KEYWORD | THROUGH_KEYWORD | TUPLE_KEYWORD | UNION_KEYWORD | VOID_KEYWORD | AND_KEYWORD | NOT_KEYWORD | OR_KEYWORD | STR_OP_EQ | STR_OP_GT | STR_OP_LT | STR_OP_GTE | STR_OP_LTE | STR_OP_NE | STR_OP_MATCHES | LPARENTH | RPARENTH | LBRACE | RBRACE | LBRACK | RBRACK | COMMA | DOT | EQUAL | GT | LT | QMARK | COLON | EQEQ | LTEQ | GTEQ | NOTEQ | PLUS | MINUS | STAR | DIV | POUND | PERCENT | DOUBLE_PERIOD | DOLLAR | DCOLON | DOC_COMMENT | BOOLEAN_TRUE | END_OF_LINE_COMMENT | BOOLEAN_FALSE | C_STYLE_COMMENT)*

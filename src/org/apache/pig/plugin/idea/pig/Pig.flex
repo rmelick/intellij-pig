@@ -13,9 +13,9 @@ import com.intellij.psi.TokenType;
 %caseless
 %function advance
 %type IElementType
-%eof{
+%eof{ return;
 %eof}
-%state REGISTER
+%state REGISTER, RMF
 
 /* main character classes */
 DIGIT=[0-9]
@@ -52,7 +52,7 @@ STRING_LITERAL=\'([^\\\'\r\n]|{ESCAPE_SEQUENCE})*(\'|\\)?
 ESCAPE_SEQUENCE=\\[^\r\n]
 
 SEMI_OR_WHITE=({WHITE_SPACE})|(";")
-REGISTER_FILENAME=([^";"])*
+NOT_SEMI=([^";"])*
 
 %%
 
@@ -127,13 +127,17 @@ REGISTER_FILENAME=([^";"])*
 
 
 <YYINITIAL> "REGISTER" { yybegin(REGISTER); return PigTypes.REGISTER_KEYWORD; }
-<REGISTER> {REGISTER_FILENAME} { yybegin(YYINITIAL); return PigTypes.REGISTER_FILENAME; }
+<REGISTER> {NOT_SEMI} { yybegin(YYINITIAL); return PigTypes.LEXED_FILENAME; }
 
 /*<YYINITIAL> "REGISTER" { return PigTypes.REGISTER_KEYWORD; }*/
 
 <YYINITIAL> "RETURNS" { return PigTypes.RETURNS_KEYWORD; }
 <YYINITIAL> "RIGHT" { return PigTypes.RIGHT_KEYWORD; }
-<YYINITIAL> "RMF" { return PigTypes.RMF_KEYWORD; }
+
+<YYINITIAL> "RMF" { yybegin(RMF); return PigTypes.RMF_KEYWORD; }
+<RMF> {STRING_LITERAL} { yybegin(YYINITIAL); return PigTypes.STRING_LITERAL; }
+<RMF> {NOT_SEMI} { yybegin(YYINITIAL); return PigTypes.LEXED_FILENAME; }
+
 <YYINITIAL> "SAMPLE" { return PigTypes.SAMPLE_KEYWORD; }
 <YYINITIAL> "SET" { return PigTypes.SET_KEYWORD; }
 <YYINITIAL> "SHIP" { return PigTypes.SHIP_KEYWORD; }
