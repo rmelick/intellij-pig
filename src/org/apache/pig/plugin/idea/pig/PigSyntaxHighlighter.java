@@ -24,13 +24,12 @@ import java.util.Set;
 import static com.intellij.openapi.editor.colors.TextAttributesKey.createTextAttributesKey;
 
 public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
-  public static final TextAttributesKey OPERATOR = createTextAttributesKey("PIG_OPERATOR", SyntaxHighlighterColors.OPERATION_SIGN);
+  public static final TextAttributesKey BINARY_OPERATOR = createTextAttributesKey("PIG_BINARY_OPERATOR", SyntaxHighlighterColors.OPERATION_SIGN);
   public static final TextAttributesKey COMMENT = createTextAttributesKey("PIG_COMMENT", SyntaxHighlighterColors.LINE_COMMENT);
   public static final TextAttributesKey KEYWORD = createTextAttributesKey("PIG_KEYWORD", SyntaxHighlighterColors.KEYWORD);
   public static final TextAttributesKey STRING = createTextAttributesKey("PIG_STRING", SyntaxHighlighterColors.STRING);
   public static final TextAttributesKey FILENAME = createTextAttributesKey("PIG_FILENAME", SyntaxHighlighterColors.STRING);
   public static final TextAttributesKey NUMBER = createTextAttributesKey("PIG_NUMBER", SyntaxHighlighterColors.NUMBER);
-
 
   public static final TextAttributesKey EXEC_COMMAND = createTextAttributesKey("PIG_EXEC_COMMAND",
                                                                                new TextAttributes(Color.ORANGE, null, null, null, Font.PLAIN));
@@ -45,13 +44,28 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
 
   private static Set<IElementType> getNumberTypes()
   {
-    Set<IElementType> numberTypes = new HashSet<IElementType>(4);
+    Set<IElementType> numberTypes = new HashSet<IElementType>(5);
     numberTypes.add(PigTypes.NUM_SCALAR);
     numberTypes.add(PigTypes.INTEGER_LITERAL);
     numberTypes.add(PigTypes.LONG_LITERAL);
     numberTypes.add(PigTypes.FLOAT_LITERAL);
     numberTypes.add(PigTypes.DOUBLE_LITERAL);
     return numberTypes;
+  }
+
+  private static final Set<IElementType> _binaryOperators = getBinaryOperatorTypes();
+
+  private static final Set<IElementType> getBinaryOperatorTypes()
+  {
+    Set<IElementType> types = new HashSet<IElementType>(6);
+    types.add(PigTypes.PLUS);
+    types.add(PigTypes.MINUS);
+    types.add(PigTypes.STAR);
+    types.add(PigTypes.DIV);
+    types.add(PigTypes.PERCENT);
+    types.add(PigTypes.EQEQ);
+    types.add(PigTypes.DCOLON);
+    return types;
   }
 
 
@@ -76,7 +90,7 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
       attributes.add(PREPROCESSOR_COMMAND);
     }
 
-    if (tokenType.equals(PigTypes.LEXED_FILENAME))
+    if (tokenType.equals(PigTypes.LEXED_FILENAME) | tokenType.equals(PigTypes.FILENAME))
     {
       attributes.add(FILENAME);
     }
@@ -91,14 +105,14 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
       attributes.add(STRING);
     }
 
-    if (tokenType.equals(PigTypes.FILENAME))
-    {
-      attributes.add(FILENAME);
-    }
-
     if (_numberTypes.contains(tokenType))
     {
       attributes.add(NUMBER);
+    }
+
+    if (_binaryOperators.contains(tokenType))
+    {
+      attributes.add(BINARY_OPERATOR);
     }
 
     if (tokenType.equals(PigTypes.EXEC_LITERAL))
@@ -106,9 +120,36 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
       attributes.add(EXEC_COMMAND);
     }
 
+    if (tokenType.equals(PigTypes.LPARENTH) || tokenType.equals(PigTypes.RPARENTH))
+    {
+      attributes.add(SyntaxHighlighterColors.PARENTHS);
+    }
+
+    if (tokenType.equals(PigTypes.LBRACE) || tokenType.equals(PigTypes.LBRACE))
+    {
+      attributes.add(SyntaxHighlighterColors.BRACES);
+    }
+
+    if (tokenType.equals(PigTypes.LBRACK) || tokenType.equals(PigTypes.LBRACK))
+    {
+      attributes.add(SyntaxHighlighterColors.BRACKETS);
+    }
+
+    if (tokenType.equals(PigTypes.COMMA))
+    {
+      attributes.add(SyntaxHighlighterColors.COMMA);
+    }
+
+    if (tokenType.equals(PigTypes.SEMICOLON))
+    {
+      attributes.add(SyntaxHighlighterColors.JAVA_SEMICOLON);
+    }
+
     if (tokenType.equals(TokenType.BAD_CHARACTER)) {
       attributes.add(BAD_CHARACTER);
     }
+
+
 
     if (attributes.size() < 1) {
       System.err.println("Unrecognized token type: " + tokenType);

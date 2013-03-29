@@ -44,7 +44,7 @@ register_statement ::= REGISTER_KEYWORD LEXED_FILENAME SEMICOLON
 
 property_set ::= SET_KEYWORD property_key property_value {pin=1}
 property_key ::= id (DOT id)*
-property_value ::= STRING_LITERAL
+property_value ::= scalar
 
 variable_set ::= (DECLARE_COMMAND | DEFAULT_COMMAND) param_name param_value
 param_name ::= id
@@ -124,7 +124,7 @@ import_statement ::= IMPORT_KEYWORD STRING_LITERAL SEMICOLON
 general_statement ::= (alias EQUAL)? (op_clause parallel_clause? | LPARENTH op_clause parallel_clause? RPARENTH) SEMICOLON //{recoverUntil="recover_"}
 
 alias ::= id
-id ::= IDENTIFIER
+id ::= IDENTIFIER (DCOLON IDENTIFIER)*
 
 parallel_clause ::= PARALLEL_KEYWORD INTEGER_LITERAL
 
@@ -258,9 +258,13 @@ expr_eval ::= const_expr | var_expr
 const_expr ::= literal
 var_expr ::= projectable_expr (dot_proj | pound_proj)*
 
-projectable_expr ::= func_eval | col_ref | bin_expr
+projectable_expr ::= func_eval | col_ref | bin_expr | type_conversion
 dot_proj ::= DOT (col_alias_or_index | (LPARENTH col_alias_or_index (COMMA col_alias_or_index)* RPARENTH))
 pound_proj ::= POUND (STRING_LITERAL | NULL_KEYWORD)
+
+type_conversion ::= LBRACE real_arg_list RBRACE
+                  | LBRACK real_arg_list RBRACK
+                  | LPARENTH at_least_one_real_arg RPARENTH
 
 private col_alias_or_index ::= col_alias | col_index
 col_alias ::= GROUP_KEYWORD | id
@@ -269,6 +273,7 @@ col_index ::= DOLLARVAR
 func_eval ::= func_name LPARENTH real_arg_list? RPARENTH
 real_arg_list ::= real_arg (COMMA real_arg)*
 real_arg ::= expr | STAR | col_range
+at_least_one_real_arg ::= real_arg (COMMA real_arg)+
 
 bin_expr ::= LPARENTH cond QMARK expr COLON expr RPARENTH
 
@@ -328,6 +333,5 @@ comment ::= (C_STYLE_COMMENT |
 
 
 //TODO figure out why these aren't being used
-unused ::= DCOLON | IN_KEYWORD
 
 //other ::= ( EXEC_LITERAL | NULL_KEYWORD | AS_KEYWORD | ASC_KEYWORD | BAG_KEYWORD | BY_KEYWORD | CACHE_KEYWORD | CHARARRAY_KEYWORD | COGROUP_KEYWORD | CROSS_KEYWORD | DEFINE_KEYWORD | DESC_KEYWORD | DISTINCT_KEYWORD | DOUBLE_KEYWORD | FILTER_KEYWORD | FLATTEN_KEYWORD | FLOAT_KEYWORD | FOREACH_KEYWORD | FULL_KEYWORD | GENERATE_KEYWORD | GROUP_KEYWORD | IF_KEYWORD | IN_KEYWORD | INNER_KEYWORD | INPUT_KEYWORD | INT_KEYWORD | INTO_KEYWORD | IS_KEYWORD | JOIN_KEYWORD | LEFT_KEYWORD | LIMIT_KEYWORD | LONG_KEYWORD | MAP_KEYWORD | MAPREDUCE_KEYWORD | ONSCHEMA_KEYWORD | ORDER_KEYWORD | OUTER_KEYWORD | OUTPUT_KEYWORD | PARALLEL_KEYWORD | PARTITION_KEYWORD | RETURNS_KEYWORD | RIGHT_KEYWORD | SAMPLE_KEYWORD | SET_KEYWORD | SHIP_KEYWORD | SPLIT_KEYWORD | STDERROR_KEYWORD | STDIN_KEYWORD | STDOUT_KEYWORD | STORE_KEYWORD | STREAM_KEYWORD | THROUGH_KEYWORD | TUPLE_KEYWORD | UNION_KEYWORD | VOID_KEYWORD | AND_KEYWORD | NOT_KEYWORD | OR_KEYWORD | STR_OP_EQ | STR_OP_GT | STR_OP_LT | STR_OP_GTE | STR_OP_LTE | STR_OP_NE | STR_OP_MATCHES | LPARENTH | RPARENTH | LBRACE | RBRACE | LBRACK | RBRACK | COMMA | DOT | EQUAL | GT | LT | QMARK | COLON | EQEQ | LTEQ | GTEQ | NOTEQ | PLUS | MINUS | STAR | DIV | POUND | PERCENT | DOUBLE_PERIOD | DOLLAR | DCOLON | DOC_COMMENT | BOOLEAN_TRUE | END_OF_LINE_COMMENT | BOOLEAN_FALSE | C_STYLE_COMMENT)*

@@ -18,14 +18,14 @@ import java.util.Map;
 
 public class PigColorSettingsPage implements ColorSettingsPage {
   private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
-    new AttributesDescriptor("Operators", PigSyntaxHighlighter.OPERATOR),
+    new AttributesDescriptor("Binary Operators", PigSyntaxHighlighter.BINARY_OPERATOR),
     new AttributesDescriptor("Comments", PigSyntaxHighlighter.COMMENT),
-    new AttributesDescriptor("Keywords", PigSyntaxHighlighter.KEYWORD),
-    new AttributesDescriptor("Strings", PigSyntaxHighlighter.STRING),
-    new AttributesDescriptor("Filenames", PigSyntaxHighlighter.FILENAME),
-    new AttributesDescriptor("Exec commands", PigSyntaxHighlighter.EXEC_COMMAND),
     new AttributesDescriptor("Constant Numbers", PigSyntaxHighlighter.NUMBER),
+    new AttributesDescriptor("Exec commands", PigSyntaxHighlighter.EXEC_COMMAND),
+    new AttributesDescriptor("Filenames", PigSyntaxHighlighter.FILENAME),
+    new AttributesDescriptor("Keywords", PigSyntaxHighlighter.KEYWORD),
     new AttributesDescriptor("Preprocessor Commands", PigSyntaxHighlighter.PREPROCESSOR_COMMAND),
+    new AttributesDescriptor("Strings", PigSyntaxHighlighter.STRING),
   };
 
   @Nullable
@@ -43,55 +43,46 @@ public class PigColorSettingsPage implements ColorSettingsPage {
   @NotNull
   @Override
   public String getDemoText() {
-    return "%default DATE '20090101';\n" +
-      "%declare CMD `generate_date`;\n" +
+    return "set mapred.reduce.slowstart.completed.maps 0.999;\n" +
+      "set job.name 'queue messages for sending';\n" +
       "\n" +
-      "IMPORT 'myjar.jar';\n" +
-      "IMPORT '*.jar';\n" +
-      "\n" +
-      "DEFINE GetTreatment com.linkedin.GetTreatment('stuff');\n" +
+      "%declare today `date \"+%Y/%m/%d\"`\n" +
+      "%declare kernel `uname -s`\n" +
+      "%declare todayseconds `bash -c 'if [[ \"$kernel\" == \"Linux\" ]]; then date -d $today \"+%s\"; else date -jf \"%Y/%m/%d\" $today \"+%s\"; fi'`\n" +
+      "%default todayUTCDate `date \\-\\-utc \"+%Y-%m-%d\"`\n" +
       "\n" +
       "/*\n" +
-      "This is the example code.\n" +
+      "A job that computes things\n" +
       "*/\n" +
       "\n" +
+      "REGISTER @fatjar@;\n" +
       "\n" +
-      "x = LOAD '/data/derived/blah#LATEST' USING com.linkedin.LiAvroStorage('date.range', 'num.days=40');\n" +
+      "inputData = LOAD '$input_data' USING BinaryJSON();\n" +
       "\n" +
-      "y = x;  -- A comment at the end of the line\n" +
+      "emailSchedule = load '$email_schedule/#LATEST' using LiAvroStorage();\n" +
+      "todaysSchedule = filter emailSchedule by receiveUTCDate == '$todayUTCDate';\n" +
       "\n" +
-      "z = GROUP x BY (first);\n" +
+      "scheduledRecipients = filter todaysSchedule by campaign == '$email_key';\n" +
       "\n" +
-      "x = FILTER y BY (col1 == 'abc');\n" +
-      "\n" +
-      "-- A different comment\n" +
-      "z = DISTINCT a PARALLEL 1;\n" +
-      "\n" +
-      "Z = LIMIT a 10;\n" +
-      "\n" +
-      "Z = SAMPLE a 10.0;\n" +
-      "\n" +
-      "ORDER a BY col1 ASC;\n" +
-      "\n" +
-      "X = CROSS A, B;\n" +
-      "\n" +
-      "a = UNION a, b;\n" +
-      "\n" +
-      "B = STREAM A THROUGH `stream.pl -n 5`;\n" +
-      "\n" +
-      "B = MAPREDUCE 'wordcount.jar' STORE A INTO 'inputDir' LOAD 'outputDir' `org.myorg.WordCount inputDir outputDir`;\n" +
-      "\n" +
-      "A = JOIN x BY col1, y BY col2 USING 'replicated';\n" +
-      "\n" +
-      "A = FILTER a BY (col1 + (INT) col2) == 2;\n" +
-      "\n" +
-      "STORE x INTO '/mydata/' USING PigStorage(',');\n" +
-      "\n" +
-      "d = FOREACH (JOIN x BY col1, y by col2) GENERATE x.others AS output; --hello\n" +
-      "\n" +
-      "lowercase = group A by col1 using 'replicated';\n" +
+      "outputData = join scheduledRecipients by memberId, inputData by recipientID PARALLEL 50;\n" +
       "\n" +
       "\n" +
+      "-- reorder input to match output schema then send to production with Kafka writer\n" +
+      "-- also rename template_id to emailKey\n" +
+      "reordered = FOREACH outputData GENERATE\n" +
+      "\t(long) $todayseconds * 1000 as expectedDeliveryDate:long,\n" +
+      "\t(int) recipientID as recipientID:int,\n" +
+      "\t-8 as gmtOffset:int,\n" +
+      "\t(int) 2 as categoryID:int,\n" +
+      "\t(int) 0 as priority:int,\n" +
+      "\t'$email_key' as emailKey:chararray,\n" +
+      "\tCONCAT('$email_key','$todayseconds') as contentID:chararray,\n" +
+      "\tbody as body:chararray\n" +
+      ";\n" +
+      "\n" +
+      "\n" +
+      "\n" +
+      "STORE reordered INTO '$kafkahost' USING kafka.KafkaStorage('$kafkaschema');\n" +
       "\n";
   }
 

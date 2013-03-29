@@ -104,7 +104,6 @@ NOT_SEMI=([^";"])*
 <YYINITIAL> "GROUP" { return PigTypes.GROUP_KEYWORD; }
 <YYINITIAL> "IF" { return PigTypes.IF_KEYWORD; }
 <YYINITIAL> "IMPORT" { return PigTypes.IMPORT_KEYWORD; }
-<YYINITIAL> "IN" { return PigTypes.IN_KEYWORD; }
 <YYINITIAL> "INNER" { return PigTypes.INNER_KEYWORD; }
 <YYINITIAL> "INPUT" { return PigTypes.INPUT_KEYWORD; }
 <YYINITIAL> "INT" { return PigTypes.INT_KEYWORD; }

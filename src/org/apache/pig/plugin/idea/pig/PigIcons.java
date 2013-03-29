@@ -9,7 +9,7 @@ import javax.swing.*;
  * Date: 3/19/13
  */
 public class PigIcons {
-  public static final Icon FILE = IconLoader.getIcon("/com/linkedin/pig/icons/jar-gray.png");
+  public static final Icon FILE = IconLoader.getIcon("/org/apache/pig/plugin/idea/icons/jar-gray.png");
 }
 
 

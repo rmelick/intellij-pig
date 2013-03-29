@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-  <id>org.apache.pig.plugin.idea</id>
+  <id>org.apache.pig.plugin.idea.pig</id>
   <name>Pig</name>
   <version>1.1</version>
   <vendor email="rmelick@cs.hmc.edu" url="https://github.com/rmelick/intellij-pig">open source</vendor>
@@ -14,7 +14,18 @@
         <li>Better support for filenames in REGISTER statment (although it still requires ; at end)</li>
         <li>Add support for RMF and SET commands</li>
         <li>Migrate package name to org.apache.pig.plugin.idea</li>
+        <li>Update the demo text for the settings page</li>
+        <li>Add bytearray and boolean types</li>
+        <li>Add disambiguate operator (::)</li>
+        <li>Fix file icon</li>
+      </ul>
+
+      Known issues:
       <ul>
+        <li>Filenames are not detected in LOAD and STORE statements</li>
+        <li>Filenames are not detected in LOAD and STORE statements</li>
+        <li>Need a better icon for the files</li>
+      </ul>
 
       1.0: Initial version that supports syntax highlighting. Still missing<br>
       <ul>
@@ -22,7 +33,7 @@
        <li>Error messages for bad syntax</li>
        <li>:: operator</li>
        <li>Parentheses/Brace matching</li>
-      <ul>
+      </ul>
       ]]>
   </change-notes>
 
