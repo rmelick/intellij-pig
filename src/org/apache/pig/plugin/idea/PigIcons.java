@@ -1,4 +1,4 @@
-package org.apache.pig.plugin.idea.pig;
+package org.apache.pig.plugin.idea;
 
 import com.intellij.openapi.util.IconLoader;
 

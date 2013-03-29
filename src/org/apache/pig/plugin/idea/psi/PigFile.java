@@ -1,4 +1,4 @@
-package org.apache.pig.plugin.idea.pig.psi;
+package org.apache.pig.plugin.idea.psi;
 
 /**
  * @author: rmelick <rmelick@linkedin.com>
@@ -8,8 +8,8 @@ package org.apache.pig.plugin.idea.pig.psi;
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
-import org.apache.pig.plugin.idea.pig.PigFileType;
-import org.apache.pig.plugin.idea.pig.PigLanguage;
+import org.apache.pig.plugin.idea.PigFileType;
+import org.apache.pig.plugin.idea.PigLanguage;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;

@@ -1,4 +1,4 @@
-package org.apache.pig.plugin.idea.pig;
+package org.apache.pig.plugin.idea;
 
 /**
  * @author: rmelick <rmelick@linkedin.com>
@@ -9,7 +9,7 @@ import com.intellij.codeInsight.completion.*;
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
 import com.intellij.patterns.PlatformPatterns;
 import com.intellij.util.ProcessingContext;
-import org.apache.pig.plugin.idea.pig.psi.PigTypes;
+import org.apache.pig.plugin.idea.psi.PigTypes;
 import org.jetbrains.annotations.NotNull;
 
 public class PigKeywordCompletionContributor extends CompletionContributor {

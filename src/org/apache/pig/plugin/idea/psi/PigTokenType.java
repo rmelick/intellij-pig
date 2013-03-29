@@ -1,4 +1,4 @@
-package org.apache.pig.plugin.idea.pig.psi;
+package org.apache.pig.plugin.idea.psi;
 
 /**
  * @author: rmelick <rmelick@linkedin.com>
@@ -6,7 +6,7 @@ package org.apache.pig.plugin.idea.pig.psi;
  */
 
 import com.intellij.psi.tree.IElementType;
-import org.apache.pig.plugin.idea.pig.PigLanguage;
+import org.apache.pig.plugin.idea.PigLanguage;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 

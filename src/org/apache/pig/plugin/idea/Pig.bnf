@@ -1,17 +1,17 @@
 {
-  parserClass="org.apache.pig.plugin.idea.pig.parser.PigParser"
-  stubParserClass="org.apache.pig.plugin.idea.pig.parser.GeneratedParserUtilBase"
+  parserClass="org.apache.pig.plugin.idea.parser.PigParser"
+  stubParserClass="org.apache.pig.plugin.idea.parser.GeneratedParserUtilBase"
 
   extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
 
   psiClassPrefix="Pig"
   psiImplClassSuffix="Impl"
-  psiPackage="org.apache.pig.plugin.idea.pig.psi"
-  psiImplPackage="org.apache.pig.plugin.idea.pig.psi.impl"
+  psiPackage="org.apache.pig.plugin.idea.psi"
+  psiImplPackage="org.apache.pig.plugin.idea.psi.impl"
 
-  elementTypeHolderClass="org.apache.pig.plugin.idea.pig.psi.PigTypes"
-  elementTypeClass="org.apache.pig.plugin.idea.pig.psi.PigElementType"
-  tokenTypeClass="org.apache.pig.plugin.idea.pig.psi.PigTokenType"
+  elementTypeHolderClass="org.apache.pig.plugin.idea.psi.PigTypes"
+  elementTypeClass="org.apache.pig.plugin.idea.psi.PigElementType"
+  tokenTypeClass="org.apache.pig.plugin.idea.psi.PigTokenType"
 
   //extends(".*_statement|comment")=statement
 }

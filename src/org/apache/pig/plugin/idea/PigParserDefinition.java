@@ -1,4 +1,4 @@
-package org.apache.pig.plugin.idea.pig;
+package org.apache.pig.plugin.idea;
 
 /**
  * @author: rmelick <rmelick@linkedin.com>
@@ -18,9 +18,9 @@ import com.intellij.psi.PsiFile;
 import com.intellij.psi.TokenType;
 import com.intellij.psi.tree.IFileElementType;
 import com.intellij.psi.tree.TokenSet;
-import org.apache.pig.plugin.idea.pig.parser.PigParser;
-import org.apache.pig.plugin.idea.pig.psi.PigFile;
-import org.apache.pig.plugin.idea.pig.psi.PigTypes;
+import org.apache.pig.plugin.idea.parser.PigParser;
+import org.apache.pig.plugin.idea.psi.PigFile;
+import org.apache.pig.plugin.idea.psi.PigTypes;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.Reader;

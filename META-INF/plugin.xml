@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-  <id>org.apache.pig.plugin.idea.pig</id>
+  <id>org.apache.pig.plugin.idea</id>
   <name>Pig</name>
   <version>1.1</version>
   <vendor email="rmelick@cs.hmc.edu" url="https://github.com/rmelick/intellij-pig">open source</vendor>
@@ -59,9 +59,9 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-      <fileTypeFactory implementation="org.apache.pig.plugin.idea.pig.PigFileTypeFactory"/>
-      <lang.parserDefinition language="Pig" implementationClass="org.apache.pig.plugin.idea.pig.PigParserDefinition"/>
-      <lang.syntaxHighlighterFactory key="Pig" implementationClass="org.apache.pig.plugin.idea.pig.PigSyntaxHighlighterFactory"/>
-      <colorSettingsPage implementation="org.apache.pig.plugin.idea.pig.PigColorSettingsPage"/>
+      <fileTypeFactory implementation="org.apache.pig.plugin.idea.PigFileTypeFactory"/>
+      <lang.parserDefinition language="Pig" implementationClass="org.apache.pig.plugin.idea.PigParserDefinition"/>
+      <lang.syntaxHighlighterFactory key="Pig" implementationClass="org.apache.pig.plugin.idea.PigSyntaxHighlighterFactory"/>
+      <colorSettingsPage implementation="org.apache.pig.plugin.idea.PigColorSettingsPage"/>
   </extensions>
 </idea-plugin>

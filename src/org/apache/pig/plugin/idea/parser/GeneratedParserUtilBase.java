@@ -1,4 +1,4 @@
-package org.apache.pig.plugin.idea.pig.parser;
+package org.apache.pig.plugin.idea.parser;
 
 import com.intellij.lang.*;
 import com.intellij.lang.impl.PsiBuilderAdapter;
