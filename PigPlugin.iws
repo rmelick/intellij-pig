@@ -2,26 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f314edf8-7661-427a-9ff7-d063282f88dd" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/Pig.bnf" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/Pig.bnf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/Pig.flex" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/Pig.flex" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigColorSettingsPage.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigColorSettingsPage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigFileType.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigFileType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigFileTypeFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigFileTypeFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigIcons.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigIcons.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigKeywordCompletionContributor.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigKeywordCompletionContributor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigLanguage.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigLanguage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigLexer.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigLexer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigParserDefinition.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigParserDefinition.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigSyntaxHighlighter.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigSyntaxHighlighter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/PigSyntaxHighlighterFactory.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigSyntaxHighlighterFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/icons/jar-gray.png" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/icons/jar-gray.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/parser/GeneratedParserUtilBase.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/parser/GeneratedParserUtilBase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigElementType.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/psi/PigElementType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigFile.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/psi/PigFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigTokenType.java" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/psi/PigTokenType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/scratch.txt" afterPath="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/scratch.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PigPlugin.jar" afterPath="$PROJECT_DIR$/PigPlugin.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PigPlugin.iws" afterPath="$PROJECT_DIR$/PigPlugin.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
     </list>
     <ignored path="PigPlugin.iws" />
@@ -29,7 +9,7 @@
     <file path="/PigLanguage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752529881" ignored="false" />
     <file path="/PigFileType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752874786" ignored="false" />
     <file path="/PigFileTypeFactory.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752953671" ignored="false" />
-    <file path="/plugin.xml" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364542584863" ignored="false" />
+    <file path="/plugin.xml" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364544245561" ignored="false" />
     <file path="/fragment.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364542804784" ignored="false" />
     <file path="/Dummy.txt" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364543400104" ignored="false" />
     <file path="/PigTokenType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753727864" ignored="false" />
@@ -274,19 +254,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pig.bnf" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Pig.bnf" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/apache/pig/plugin/idea/Pig.bnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="45" selection-start="644" selection-end="644" vertical-scroll-proportion="0.69948184">
+            <state line="18" column="45" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="10" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+            <state line="13" column="8" selection-start="371" selection-end="371" vertical-scroll-proportion="0.5227882">
               <folding />
             </state>
           </provider>
@@ -380,8 +360,8 @@
         <option value="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigElementType.java" />
         <option value="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigFile.java" />
         <option value="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/pig/psi/PigTokenType.java" />
-        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigKeywordCompletionContributor.java" />
+        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -808,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/apache/pig/plugin/idea/PigLexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="6" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
@@ -969,7 +942,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/apache/pig/plugin/idea/Pig.bnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="45" selection-start="644" selection-end="644" vertical-scroll-proportion="0.69948184">
+        <state line="18" column="45" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="371" selection-end="371" vertical-scroll-proportion="0.5227882">
           <folding />
         </state>
       </provider>

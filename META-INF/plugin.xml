@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>org.apache.pig.plugin.idea</id>
   <name>Pig</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <vendor email="rmelick@cs.hmc.edu" url="https://github.com/rmelick/intellij-pig">open source</vendor>
 
   <description><![CDATA[
@@ -9,6 +9,11 @@
       ]]></description>
 
   <change-notes><![CDATA[
+      1.2:
+      <ul>
+        
+      </ul>
+
       1.1:
       <ul>
         <li>Better support for filenames in REGISTER statment (although it still requires ; at end)</li>
