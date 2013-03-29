@@ -21,8 +21,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.intellij.openapi.editor.colors.TextAttributesKey.createTextAttributesKey;
-
 public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
   public static final TextAttributesKey BINARY_OPERATOR = createTextAttributesKey("PIG_BINARY_OPERATOR", SyntaxHighlighterColors.OPERATION_SIGN);
   public static final TextAttributesKey COMMENT = createTextAttributesKey("PIG_COMMENT", SyntaxHighlighterColors.LINE_COMMENT);
@@ -31,14 +29,26 @@ public class PigSyntaxHighlighter extends SyntaxHighlighterBase {
   public static final TextAttributesKey FILENAME = createTextAttributesKey("PIG_FILENAME", SyntaxHighlighterColors.STRING);
   public static final TextAttributesKey NUMBER = createTextAttributesKey("PIG_NUMBER", SyntaxHighlighterColors.NUMBER);
 
-  public static final TextAttributesKey EXEC_COMMAND = createTextAttributesKey("PIG_EXEC_COMMAND",
+  public static final TextAttributesKey EXEC_COMMAND = TextAttributesKey.createTextAttributesKey("PIG_EXEC_COMMAND",
                                                                                new TextAttributes(Color.ORANGE, null, null, null, Font.PLAIN));
 
-  public static final TextAttributesKey PREPROCESSOR_COMMAND = createTextAttributesKey("PIG_PRE_PROCESSOR",
+  public static final TextAttributesKey PREPROCESSOR_COMMAND = TextAttributesKey.createTextAttributesKey("PIG_PRE_PROCESSOR",
                                                                                        new TextAttributes(Color.BLUE, null, null, null, Font.PLAIN));
 
-  static final TextAttributesKey BAD_CHARACTER = createTextAttributesKey("PIG_BAD_CHARACTER",
+  static final TextAttributesKey BAD_CHARACTER = TextAttributesKey.createTextAttributesKey("PIG_BAD_CHARACTER",
                                                                          new TextAttributes(Color.RED, null, null, null, Font.BOLD));
+
+  private static TextAttributesKey createTextAttributesKey(String name, TextAttributesKey defaultAttributes)
+  {
+    try
+    {
+      return TextAttributesKey.createTextAttributesKey(name, defaultAttributes);
+    }
+    catch (NoSuchMethodError e)
+    {
+      return TextAttributesKey.createTextAttributesKey(name, defaultAttributes.getDefaultAttributes());
+    }
+  }
 
   private static final Set<IElementType> _numberTypes= getNumberTypes();
 

@@ -11,7 +11,7 @@
   <change-notes><![CDATA[
       1.2:
       <ul>
-        
+        <li>Fix SyntaxHighlighter bug that was causing plugin to crash in older version of IDEA (e.x. 11)</li>
       </ul>
 
       1.1:
