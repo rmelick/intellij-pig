@@ -9,7 +9,7 @@
     <file path="/PigLanguage.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752529881" ignored="false" />
     <file path="/PigFileType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752874786" ignored="false" />
     <file path="/PigFileTypeFactory.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363752953671" ignored="false" />
-    <file path="/plugin.xml" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364835706948" ignored="false" />
+    <file path="/plugin.xml" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364835918087" ignored="false" />
     <file path="/fragment.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364542804784" ignored="false" />
     <file path="/Dummy.txt" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1364574674365" ignored="false" />
     <file path="/PigTokenType.java" changelist="f314edf8-7661-427a-9ff7-d063282f88dd" time="1363753727864" ignored="false" />
@@ -126,7 +126,7 @@
       <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="42" selection-start="405" selection-end="405" vertical-scroll-proportion="0.4875">
+            <state line="4" column="28" selection-start="136" selection-end="136" vertical-scroll-proportion="0.15">
               <folding />
             </state>
           </provider>
@@ -827,7 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="42" selection-start="405" selection-end="405" vertical-scroll-proportion="0.4875">
+        <state line="4" column="28" selection-start="136" selection-end="136" vertical-scroll-proportion="0.15">
           <folding />
         </state>
       </provider>
